@@ -1,0 +1,65 @@
+/* ============================================================
+   VARIABLES — Cultivora Land
+   Palette monochrome verte (forêt profonde → vert clair) avec
+   le crème/ivoire comme unique neutre chaud. Pas de doré : le
+   vert seul porte l'identité "jardin du savoir".
+============================================================ */
+
+:root {
+
+  /* ── Verts (dominante) ── */
+  --green-deepest:  #0c2417;   /* fond de page, panneaux les plus sombres */
+  --green-dark:     #123420;   /* fond des sections sombres */
+  --green-forest:   #1d4a2c;   /* cartes, bordures, éléments secondaires */
+  --green-mid:      #3f7a4c;   /* accents intermédiaires, hover */
+  --green-bright:   #7ed957;   /* accent vif : "Land", boutons pleins */
+  --green-bright-rgb: 126, 217, 87;
+  --green-pale:     #d7ecc9;   /* texte clair sur fond sombre, halos */
+
+  /* ── Neutre chaud (crème) ── */
+  --cream:          #f6f1e4;   /* bandeau citation, fonds clairs */
+  --cream-rgb:      246, 241, 228;
+  --ink:            #17241a;   /* texte sur fond crème */
+  --ink-soft:       #4a5c46;   /* texte secondaire sur fond crème */
+
+  /* ── Texte sur fond vert sombre ── */
+  --text-on-green-strong: rgba(246, 241, 228, 0.94);
+  --text-on-green-mid:    rgba(246, 241, 228, 0.72);
+  --text-on-green-soft:   rgba(246, 241, 228, 0.50);
+  --border-on-green:      rgba(215, 236, 201, 0.18);
+  --border-on-green-soft: rgba(215, 236, 201, 0.10);
+
+  /* ── Typographie ── */
+  --font-display: 'Fraunces', 'Georgia', serif;      /* titres, wordmark */
+  --font-body:    'Work Sans', 'Helvetica', sans-serif; /* nav, texte courant */
+
+  --text-xs:   0.8125rem;
+  --text-sm:   0.9375rem;
+  --text-base: 1.0625rem;
+  --text-md:   1.1875rem;
+  --text-lg:   1.375rem;
+  --text-xl:   1.75rem;
+  --text-2xl:  2.5rem;
+  --text-3xl:  3.5rem;
+
+  /* ── Espacements ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* ── Rayons ── */
+  --radius-sm:   4px;
+  --radius-md:   10px;
+  --radius-pill: 999px;
+
+  /* ── Mise en page ── */
+  --container-max: 1200px;
+}

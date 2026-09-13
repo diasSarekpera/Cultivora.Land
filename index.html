@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cultivora Land, le jardin du savoir — un espace d'apprentissage, d'inspiration et de découverte pour mieux comprendre le monde." />
+  <title>Cultivora Land — Le jardin du savoir</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/bases/variables.css" />
+  <link rel="stylesheet" href="styles/bases/reset.css" />
+  <link rel="stylesheet" href="styles/bases/base.css" />
+  <link rel="stylesheet" href="styles/components/header.css" />
+  <link rel="stylesheet" href="styles/components/footer.css" />
+  <link rel="stylesheet" href="styles/pages/home/hero.css" />
+  <link rel="stylesheet" href="styles/pages/home/gates.css" />
+  <link rel="stylesheet" href="styles/pages/home/latest.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+
+      <a href="/" class="header__brand" aria-label="Cultivora Land — Retour à l'accueil">
+        <img class="header__leaf" src="assets/images/logo.png" alt="" width="34" height="34" />
+        <span class="header__wordmark">
+          <span class="header__wordmark-title">Cultivora Land</span>
+          <span class="header__wordmark-tagline">LE JARDIN DU SAVOIR</span>
+        </span>
+      </a>
+
+      <nav class="header__nav" aria-label="Navigation principale">
+        <ul class="header__nav-list">
+          <li class="header__nav-item is-active"><a href="/" class="header__nav-link">Accueil</a></li>
+          <li class="header__nav-item"><a href="/pages/about/" class="header__nav-link">À propos</a></li>
+          <li class="header__nav-item"><a href="/pages/contenus/" class="header__nav-link">Nos contenus</a></li>
+          <li class="header__nav-item"><a href="/pages/blog/" class="header__nav-link">Blog</a></li>
+          <li class="header__nav-item"><a href="/pages/contact/" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="/pages/abonnement/" class="header__subscribe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+          <span>S'abonner</span>
+        </a>
+        <button class="header__search" aria-label="Rechercher">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <button class="header__burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-label="Présentation">
+      <div class="hero__inner">
+
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Cultivora <span class="hero__title-land">Land</span>
+            <svg class="hero__title-leaf" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/>
+            </svg>
+          </h1>
+          <p class="hero__tagline">Le jardin du savoir</p>
+
+          <div class="hero__rule" aria-hidden="true">
+            <span class="hero__rule-line"></span>
+            <svg class="hero__rule-leaf" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/>
+            </svg>
+            <span class="hero__rule-line"></span>
+          </div>
+
+          <p class="hero__desc">Un espace d'apprentissage, d'inspiration et de découverte pour mieux comprendre le monde.</p>
+
+          <div class="hero__actions">
+            <a href="/pages/contenus/" class="hero__btn hero__btn--fill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+              Découvrir nos contenus
+            </a>
+            <a href="/pages/blog/" class="hero__btn hero__btn--outline">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/>
+              </svg>
+              S'abonner au blog
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <svg viewBox="0 0 440 460" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="leaf-shape" d="M0,9 C0,4 4,0 9,0 C9,5 5,9 0,9 Z"/>
+            </defs>
+
+            <circle cx="360" cy="90" r="55" fill="none" stroke="#d7ecc9" stroke-opacity="0.35" stroke-width="1.5"/>
+            <ellipse cx="360" cy="90" rx="20" ry="55" fill="none" stroke="#d7ecc9" stroke-opacity="0.3" stroke-width="1.2"/>
+            <path d="M305,90 L415,90" stroke="#d7ecc9" stroke-opacity="0.3" stroke-width="1.2"/>
+            <ellipse cx="345" cy="75" rx="14" ry="9" fill="#7ed957" opacity="0.3"/>
+            <ellipse cx="378" cy="108" rx="10" ry="7" fill="#7ed957" opacity="0.25"/>
+
+            <circle cx="228" cy="120" r="85" fill="#3f7a4c"/>
+            <circle cx="182" cy="150" r="44" fill="#2a5c34" opacity="0.9"/>
+            <circle cx="272" cy="82" r="55" fill="#7ed957" opacity="0.5"/>
+            <circle cx="257" cy="152" r="40" fill="#dff3d0" opacity="0.22"/>
+
+            <path d="M220,330 L212,182 C211,172 216,162 222,152 L236,152 C242,162 247,172 246,182 L238,330 Z" fill="#4a3323"/>
+
+            <rect x="100" y="380" width="260" height="30" rx="4" fill="#f6f1e4"/>
+            <line x1="230" y1="380" x2="230" y2="410" stroke="#1d4a2c" stroke-opacity="0.35" stroke-width="2"/>
+            <rect x="115" y="352" width="230" height="26" rx="4" fill="#1d4a2c"/>
+            <line x1="230" y1="352" x2="230" y2="378" stroke="#f6f1e4" stroke-opacity="0.3" stroke-width="2"/>
+            <rect x="130" y="326" width="200" height="24" rx="4" fill="#d7ecc9"/>
+            <line x1="230" y1="326" x2="230" y2="350" stroke="#1d4a2c" stroke-opacity="0.35" stroke-width="2"/>
+
+            <use href="#leaf-shape" transform="translate(120,55) rotate(20) scale(1.4)" fill="#7ed957" opacity="0.8"/>
+            <use href="#leaf-shape" transform="translate(335,175) rotate(-30) scale(1.1)" fill="#d7ecc9" opacity="0.65"/>
+            <use href="#leaf-shape" transform="translate(88,215) rotate(60) scale(0.9)" fill="#7ed957" opacity="0.45"/>
+          </svg>
+        </div>
+
+      </div>
+
+      <div class="hero__quote-band">
+        <p class="hero__quote">
+          <svg class="hero__quote-leaf" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/>
+          </svg>
+          « Savoir, c'est cultiver un avenir meilleur. »
+        </p>
+      </div>
+    </section>
+
+    <section class="gates" aria-label="Les trois portes du jardin du savoir">
+      <div class="gates__inner">
+        <div class="gates__header">
+          <span class="gates__eyebrow">Le jardin du savoir</span>
+          <h2 class="gates__title">Trois portes, un seul jardin</h2>
+          <p class="gates__desc">Chaque article trouve sa place derrière une de ces trois portes — trois façons d'apprendre et de grandir.</p>
+        </div>
+
+        <div class="gates__grid">
+
+          <article class="gate-card">
+            <span class="gate-card__number">01</span>
+            <svg class="gate-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9s1-6.5 3.5-9z"/>
+            </svg>
+            <h3 class="gate-card__title">Comprendre le monde</h3>
+            <p class="gate-card__desc">Société, nature, systèmes — tout ce qui explique comment le monde qui nous entoure fonctionne.</p>
+            <a href="/pages/contenus/?porte=comprendre-le-monde" class="gate-card__link">
+              Explorer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="gate-card">
+            <span class="gate-card__number">02</span>
+            <svg class="gate-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11z"/><circle cx="12" cy="10" r="2.2"/>
+            </svg>
+            <h3 class="gate-card__title">Se comprendre soi-même</h3>
+            <p class="gate-card__desc">Corps, esprit, émotions — tout ce qui explore ce qui se passe à l'intérieur de nous.</p>
+            <a href="/pages/contenus/?porte=se-comprendre-soi-meme" class="gate-card__link">
+              Explorer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="gate-card">
+            <span class="gate-card__number">03</span>
+            <svg class="gate-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v6h-6"/>
+            </svg>
+            <h3 class="gate-card__title">Créer de la valeur</h3>
+            <p class="gate-card__desc">Argent, travail, entrepreneuriat — tout ce qui touche à produire, échanger et bâtir.</p>
+            <a href="/pages/contenus/?porte=creer-de-la-valeur" class="gate-card__link">
+              Explorer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="latest" aria-label="Derniers articles">
+      <div class="latest__inner">
+
+        <div class="latest__head">
+          <div>
+            <span class="latest__eyebrow">Fraîchement cueilli</span>
+            <h2 class="latest__title">Derniers articles</h2>
+          </div>
+          <a href="/pages/contenus/" class="latest__all-link">
+            Voir tous les contenus
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="latest__grid">
+
+          <article class="article-card">
+            <div class="article-card__thumb">
+              <svg class="article-card__thumb-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
+              <span class="article-card__gate-badge">Comprendre le monde</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Comment les forêts rafraîchissent naturellement notre planète</h3>
+              <p class="article-card__excerpt">Sans bruit et sans machine, les forêts accomplissent chaque jour un travail immense pour rafraîchir le climat de la Terre.</p>
+              <a href="/pages/blog/comment-les-forets-rafraichissent-la-planete/" class="article-card__read">
+                Lire
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-card__thumb">
+              <svg class="article-card__thumb-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
+              <span class="article-card__gate-badge">Comprendre le monde</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Pourquoi payons-nous des impôts ?</h3>
+              <p class="article-card__excerpt">Chaque mois, une partie de notre salaire disparaît avant même d'arriver dans notre poche. À quoi sert réellement cet argent ?</p>
+              <a href="/pages/blog/pourquoi-payons-nous-des-impots/" class="article-card__read">
+                Lire
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-card__thumb">
+              <svg class="article-card__thumb-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
+              <span class="article-card__gate-badge">Se comprendre soi-même</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Pourquoi sommes-nous en colère ?</h3>
+              <p class="article-card__excerpt">Le cœur qui bat plus vite, les muscles qui se tendent. Que se passe-t-il vraiment en nous lorsque la colère surgit ?</p>
+              <a href="/pages/blog/pourquoi-sommes-nous-en-colere/" class="article-card__read">
+                Lire
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-card__thumb">
+              <svg class="article-card__thumb-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
+              <span class="article-card__gate-badge">Créer de la valeur</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Pourquoi l'argent perd-il de sa valeur ?</h3>
+              <p class="article-card__excerpt">Nous utilisons de l'argent chaque jour sans y penser. Mais pourquoi le même billet permet-il d'acheter moins d'année en année ?</p>
+              <a href="/pages/blog/pourquoi-largent-perd-il-de-sa-valeur/" class="article-card__read">
+                Lire
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+
+      <div>
+        <div class="site-footer__brand">
+          <img class="site-footer__leaf" src="assets/images/logo.png" alt="" width="26" height="26" />
+          <span class="site-footer__wordmark">Cultivora Land</span>
+        </div>
+        <p class="site-footer__tagline">Un espace d'apprentissage, d'inspiration et de découverte pour mieux comprendre le monde — trois portes, un seul jardin.</p>
+      </div>
+
+      <div>
+        <p class="site-footer__col-title">Le jardin</p>
+        <nav class="site-footer__links">
+          <a href="/pages/about/">À propos</a>
+          <a href="/pages/contenus/">Nos contenus</a>
+          <a href="/pages/blog/">Blog</a>
+        </nav>
+      </div>
+
+      <div>
+        <p class="site-footer__col-title">Contact</p>
+        <nav class="site-footer__links">
+          <a href="/pages/contact/">Nous écrire</a>
+          <a href="/pages/abonnement/">S'abonner</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copyright">© 2026 Cultivora Land. Tous droits réservés.</p>
+      <div class="site-footer__socials">
+        <a href="#" class="site-footer__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="site-footer__social-link" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"/><path d="M3 7l7.1 5.3a3 3 0 0 0 3.6 0L21 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

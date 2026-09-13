@@ -1,0 +1,69 @@
+{
+  "gates": [
+    {
+      "id": "comprendre-le-monde",
+      "label": "Comprendre le monde",
+      "description": "Tout ce qui explique le fonctionnement du monde extérieur — société, nature, systèmes."
+    },
+    {
+      "id": "se-comprendre-soi-meme",
+      "label": "Se comprendre soi-même",
+      "description": "Tout ce qui explore l'intérieur — corps, esprit, émotions, identité."
+    },
+    {
+      "id": "creer-de-la-valeur",
+      "label": "Créer de la valeur",
+      "description": "Tout ce qui touche à produire, échanger, entreprendre."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "comment-les-forets-rafraichissent-la-planete",
+      "title": "Comment les forêts rafraîchissent naturellement notre planète",
+      "excerpt": "Les forêts semblent silencieuses et immobiles. Pourtant, sans bruit et sans machine, elles accomplissent chaque jour un travail immense pour rafraîchir le climat de la Terre.",
+      "gate": "comprendre-le-monde"
+    },
+    {
+      "slug": "pourquoi-payons-nous-des-impots",
+      "title": "Pourquoi payons-nous des impôts ?",
+      "excerpt": "Chaque mois, une partie de notre salaire disparaît avant même d'arriver dans notre poche. À quoi sert réellement cet argent, et pourquoi ce système existe-t-il ?",
+      "gate": "comprendre-le-monde"
+    },
+    {
+      "slug": "pourquoi-sommes-nous-en-colere",
+      "title": "Pourquoi sommes-nous en colère ?",
+      "excerpt": "Le cœur qui bat plus vite, les muscles qui se tendent, la voix qui change. Que se passe-t-il vraiment en nous lorsque la colère surgit ?",
+      "gate": "se-comprendre-soi-meme"
+    },
+    {
+      "slug": "pourquoi-baillons-nous",
+      "title": "Pourquoi bâillons-nous ?",
+      "excerpt": "Il suffit qu'une personne bâille pour que plusieurs autres l'imitent. Même lire un texte sur le bâillement peut en donner envie. Que cache ce geste si banal ?",
+      "gate": "se-comprendre-soi-meme"
+    },
+    {
+      "slug": "pourquoi-dormons-nous",
+      "title": "Pourquoi dormons-nous ?",
+      "excerpt": "Peu importe notre richesse ou notre âge, nous passons près d'un tiers de notre vie à dormir. Pourquoi notre corps réclame-t-il ce repos chaque nuit ?",
+      "gate": "se-comprendre-soi-meme"
+    },
+    {
+      "slug": "sommes-nous-vraiment-nos-pensees",
+      "title": "Sommes-nous vraiment nos pensées ?",
+      "excerpt": "Une pensée étrange surgit sans prévenir, et l'inquiétude suit : « pourquoi ai-je pensé cela ? » Sommes-nous vraiment responsables de tout ce qui traverse notre esprit ?",
+      "gate": "se-comprendre-soi-meme"
+    },
+    {
+      "slug": "pourquoi-largent-perd-il-de-sa-valeur",
+      "title": "Pourquoi l'argent perd-il de sa valeur ?",
+      "excerpt": "Nous utilisons de l'argent chaque jour sans y penser. Mais pourquoi le même billet permet-il d'acheter moins de choses d'année en année ?",
+      "gate": "creer-de-la-valeur"
+    },
+    {
+      "slug": "pourquoi-une-bonne-idee-ne-suffit-pas",
+      "title": "Pourquoi une bonne idée ne suffit-elle pas pour créer une entreprise ?",
+      "excerpt": "Une idée surgit, parfois sous la douche. Chaque année, des milliers de personnes se lancent avec elle. Pourquoi si peu réussissent-elles à en faire une vraie entreprise ?",
+      "gate": "creer-de-la-valeur"
+    }
+  ]
+}
