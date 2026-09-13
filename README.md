@@ -8,41 +8,62 @@ soi-même**, **Créer de la valeur**.
 ## Structure
 
 ```
-index.html                     Page d'accueil (hero, 3 portes, derniers articles)
-pages/blog/<slug>/index.html   Page de lecture d'un article (1 exemple construit)
-styles/bases/                  Variables, reset, styles globaux
-styles/components/             Header, footer
-styles/pages/home/             Hero, 3 portes, grille des derniers articles
-styles/pages/article/          Page de lecture d'un article
-assets/images/logo.png         Logo officiel
-JSON/content.json              Les 8 articles classés par porte
-content-source/bibliotheque/   Les 8 articles sources en Markdown
-content-source/pitch.md        Le pitch/mission du projet (utile pour la page À propos)
+index.html                          Page d'accueil (hero, 3 portes, derniers articles)
+pages/blog/index.html               Liste de tous les articles
+pages/blog/<slug>/index.html        Page de lecture d'un article (8/8 construits)
+pages/contenus/index.html           Liste filtrable par porte (?porte=<id>)
+pages/about/index.html              À propos / mission (contenu tiré de pitch.md)
+pages/contact/index.html            Formulaire de contact (non connecté — voir plus bas)
+pages/abonnement/index.html         Formulaire d'abonnement (non connecté — voir plus bas)
+styles/                             Variables, reset, styles globaux, composants, pages
+assets/images/logo.png              Logo officiel
+assets/images/og-default.jpg        Image de partage par défaut (1200×630)
+assets/images/articles/<slug>.jpg   Vignette + image de partage propre à chaque article
+JSON/content.json                   Les 8 articles classés par porte (source de vérité)
+content-source/bibliotheque/        Les 8 articles sources en Markdown
+content-source/pitch.md             Le pitch/mission du projet
 ```
 
-## Fait
+## Fait (mise à jour)
 
-- Page d'accueil complète et fonctionnelle (vrai HTML/CSS, pas une image).
-- Modèle de page de lecture construit et validé sur l'article
-  *Sommes-nous vraiment nos pensées ?* — gabarit réutilisable pour les
-  7 autres articles.
-- Logo officiel intégré (header + footer).
+- Toutes les pages liées depuis le header/footer/accueil existent désormais :
+  accueil, à propos, nos contenus (filtrable), blog (liste), 8 articles de
+  blog, contact, abonnement. Plus aucun lien du site ne mène vers une page
+  inexistante — c'était la cause des « Not Found ».
+- Toutes les pages utilisent des chemins absolus (`/pages/...`,
+  `/assets/...`, `/styles/...`) pour éviter les erreurs de chemins relatifs
+  une fois déployé.
+- Vignettes vertes (sans doré, conformes à `docs/thumbnail-prompts.md`)
+  intégrées : sur l'accueil, la page « Nos contenus », le blog et en image
+  de couverture sur chaque page d'article.
+- Balises **Open Graph** et **Twitter Card** ajoutées sur toutes les pages
+  (`og:title`, `og:description`, `og:image`, `og:url`, `twitter:card`...).
+  Chaque article utilise sa propre vignette comme image de partage ; les
+  autres pages utilisent `assets/images/og-default.jpg`, une image générée
+  à partir du logo (1200×630). Un lien `canonical` est aussi présent sur
+  chaque page.
+- Favicon ajouté (logo).
 
-## Pas encore fait
+## Pas encore fait / à faire avant mise en ligne définitive
 
-- Générer les pages de lecture pour les 7 autres articles à partir du
-  même gabarit.
-- Page « Nos contenus » (liste filtrable par porte).
-- Pages À propos, Contact, Abonnement.
-- Le temps de lecture affiché sur la page article est actuellement une
-  estimation manuelle — à calculer automatiquement si le nombre
-  d'articles grandit.
+- **Formulaires (Contact et Abonnement) non connectés.** Ce sont des sites
+  statiques (pas de backend) : les formulaires sont prêts visuellement mais
+  ne soumettent nulle part. Branchez-les à un service (Formspree, Brevo,
+  Mailchimp...) ou ajoutez un petit backend. L'e-mail de contact affiché
+  (`bonjour@cultivora-land.com`) est un espace réservé à remplacer par
+  votre vraie adresse.
+- Les liens de réseaux sociaux du footer pointent vers `#` — à remplacer
+  par les vrais comptes.
+- Le temps de lecture affiché est calculé automatiquement (nombre de mots
+  du fichier Markdown source ÷ 180 mots/minute) — à ajuster si besoin.
 
-## Point d'attention
+## Après déploiement
 
-Les images de vignettes préparées (`lecture.png` et les autres captures
-type miniature YouTube) utilisent un bandeau doré — ce qui contredit la
-décision de palette 100% verte + crème prise pour le reste du site.
-Elles n'ont pas été intégrées telles quelles pour cette raison. À
-statuer : les refaire sans doré, ou les garder uniquement pour un usage
-externe (réseaux sociaux) séparé de l'identité du site.
+Pour vérifier que l'image de partage apparaît bien sur les réseaux :
+- Facebook/LinkedIn : https://developers.facebook.com/tools/debug/
+- Twitter/X : https://cards-dev.twitter.com/validator (ou partager en DM)
+- Général : https://www.opengraph.xyz/
+
+Ces outils lisent en direct la version déployée — pensez à redéployer le
+site sur Render avant de tester, et à vider leur cache si vous aviez déjà
+testé une ancienne version.

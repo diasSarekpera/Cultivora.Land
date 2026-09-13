@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Une question, une suggestion ou une envie de collaborer ? Écrivez à l'équipe de Cultivora Land." />
+  <link rel="canonical" href="https://cultivora-land.onrender.com/pages/contact/" />
+  <title>Contact — Cultivora Land</title>
+
+  <link rel="icon" href="/assets/images/logo.png" type="image/png" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cultivora Land" />
+  <meta property="og:url" content="https://cultivora-land.onrender.com/pages/contact/" />
+  <meta property="og:title" content="Contact — Cultivora Land" />
+  <meta property="og:description" content="Une question, une suggestion ou une envie de collaborer ? Écrivez à l'équipe de Cultivora Land." />
+  <meta property="og:image" content="https://cultivora-land.onrender.com/assets/images/og-default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Cultivora Land" />
+  <meta name="twitter:description" content="Une question, une suggestion ou une envie de collaborer ? Écrivez à l'équipe de Cultivora Land." />
+  <meta name="twitter:image" content="https://cultivora-land.onrender.com/assets/images/og-default.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles/bases/variables.css" />
+  <link rel="stylesheet" href="/styles/bases/reset.css" />
+  <link rel="stylesheet" href="/styles/bases/base.css" />
+  <link rel="stylesheet" href="/styles/components/header.css" />
+  <link rel="stylesheet" href="/styles/components/footer.css" />
+  <link rel="stylesheet" href="/styles/pages/home/gates.css" />
+  <link rel="stylesheet" href="/styles/pages/article/article.css" />
+  <style>
+    .contact-wrap { max-width: 560px; margin: 0 auto; padding: 0 var(--space-8) var(--space-20); }
+    .contact-field { margin-bottom: var(--space-5); }
+    .contact-field label { display: block; margin-bottom: var(--space-2); font-size: var(--text-sm); color: var(--text-on-green-mid); }
+    .contact-field input, .contact-field textarea {
+      width: 100%; padding: var(--space-4); border-radius: var(--radius-md);
+      background: rgba(215, 236, 201, 0.05); border: 1px solid var(--border-on-green-soft);
+      color: var(--text-on-green-strong); font-family: var(--font-body); font-size: var(--text-base);
+    }
+    .contact-field textarea { min-height: 140px; resize: vertical; }
+    .contact-submit {
+      display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-6);
+      background: var(--green-bright); color: var(--green-deepest); border-radius: var(--radius-pill);
+      font-weight: 600; font-size: var(--text-sm); white-space: nowrap;
+    }
+    .contact-note { margin-top: var(--space-4); font-size: var(--text-xs); color: var(--text-on-green-soft); }
+    .contact-email { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--green-bright); font-weight: 600; margin-top: var(--space-2); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+
+      <a href="/" class="header__brand" aria-label="Cultivora Land — Retour à l'accueil">
+        <img class="header__leaf" src="/assets/images/logo.png" alt="" width="34" height="34" />
+        <span class="header__wordmark">
+          <span class="header__wordmark-title">Cultivora Land</span>
+          <span class="header__wordmark-tagline">LE JARDIN DU SAVOIR</span>
+        </span>
+      </a>
+
+      <nav class="header__nav" aria-label="Navigation principale">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/" class="header__nav-link">Accueil</a></li>
+          <li class="header__nav-item"><a href="/pages/about/" class="header__nav-link">À propos</a></li>
+          <li class="header__nav-item"><a href="/pages/contenus/" class="header__nav-link">Nos contenus</a></li>
+          <li class="header__nav-item"><a href="/pages/blog/" class="header__nav-link">Blog</a></li>
+          <li class="header__nav-item is-active"><a href="/pages/contact/" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="/pages/abonnement/" class="header__subscribe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+          <span>S'abonner</span>
+        </a>
+        <button class="header__search" aria-label="Rechercher">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <button class="header__burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="article-hero" aria-label="Contact">
+      <div class="article-hero__inner">
+        <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
+          <a href="/">Accueil</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Contact</span>
+        </nav>
+        <span class="article-hero__gate">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
+          Nous écrire
+        </span>
+        <h1 class="article-hero__title">Contactez-nous</h1>
+        <p style="margin-top: var(--space-5); color: var(--text-on-green-mid); max-width: 560px; line-height: 1.6;">Une question, une suggestion de sujet ou une envie de collaborer avec Cultivora Land ? Écrivez-nous, nous lisons chaque message.</p>
+      </div>
+    </section>
+
+    <div class="contact-wrap">
+      <form>
+        <div class="contact-field">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" autocomplete="name" />
+        </div>
+        <div class="contact-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+        </div>
+        <div class="contact-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="contact-submit">
+          Envoyer le message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <p class="contact-note">Ce formulaire n'est pas encore relié à un service d'envoi — pensez à le connecter (Formspree, Brevo, etc.) avant la mise en ligne définitive. En attendant, vous pouvez écrire directement :</p>
+        <a class="contact-email" href="mailto:bonjour@cultivora-land.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"/><path d="M3 7l7.1 5.3a3 3 0 0 0 3.6 0L21 7"/></svg>
+          bonjour@cultivora-land.com
+        </a>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+
+      <div>
+        <div class="site-footer__brand">
+          <img class="site-footer__leaf" src="/assets/images/logo.png" alt="" width="26" height="26" />
+          <span class="site-footer__wordmark">Cultivora Land</span>
+        </div>
+        <p class="site-footer__tagline">Un espace d'apprentissage, d'inspiration et de découverte pour mieux comprendre le monde — trois portes, un seul jardin.</p>
+      </div>
+
+      <div>
+        <p class="site-footer__col-title">Le jardin</p>
+        <nav class="site-footer__links">
+          <a href="/pages/about/">À propos</a>
+          <a href="/pages/contenus/">Nos contenus</a>
+          <a href="/pages/blog/">Blog</a>
+        </nav>
+      </div>
+
+      <div>
+        <p class="site-footer__col-title">Contact</p>
+        <nav class="site-footer__links">
+          <a href="/pages/contact/">Nous écrire</a>
+          <a href="/pages/abonnement/">S'abonner</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copyright">© 2026 Cultivora Land. Tous droits réservés.</p>
+      <div class="site-footer__socials">
+        <a href="#" class="site-footer__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="site-footer__social-link" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"/><path d="M3 7l7.1 5.3a3 3 0 0 0 3.6 0L21 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
