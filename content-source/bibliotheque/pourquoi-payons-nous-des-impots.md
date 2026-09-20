@@ -44,23 +44,23 @@ Le montant versé était plus faible que celui qu'il avait calculé.
 
 Intrigué, il montra sa fiche à son père.
 
-> — Papa, où est passé le reste de mon argent ?
+> « Papa, où est passé le reste de mon argent ? »
 
 Son père parcourut le document.
 
 Puis répondit calmement :
 
-> — Une partie a été prélevée pour les impôts et les cotisations.
+> « Une partie a été prélevée pour les impôts et les cotisations. »
 
 Adam fronça les sourcils.
 
-> — Mais pourquoi ? C'est moi qui ai travaillé. Pourquoi devrais-je donner une partie de mon salaire ?
+> « Mais pourquoi ? C'est moi qui ai travaillé. Pourquoi devrais-je donner une partie de mon salaire ? »
 
 Son père ne répondit pas.
 
 Il sourit simplement.
 
-> — Demain matin, viens avec moi. Je préfère te montrer la réponse plutôt que de te l'expliquer.
+> « Demain matin, viens avec moi. Je préfère te montrer la réponse plutôt que de te l'expliquer. »
 
 Le lendemain, ils partirent marcher dans la ville.
 
@@ -82,7 +82,7 @@ Il regarda Adam.
 
 Puis lui posa une seule question.
 
-> — À ton avis... qui paie pour tout cela ?
+> « À ton avis... qui paie pour tout cela ? »
 
 Adam observa autour de lui.
 
@@ -358,4 +358,4 @@ Celle de millions de personnes qui, sans toujours se connaître, ont accepté de
 
 **« Les plus grandes réalisations de l'humanité ne sont pas celles qu'un homme peut construire seul, mais celles qu'une société entière choisit de bâtir ensemble. »**
 
-— **Cultivora Land**
+**Cultivora Land**

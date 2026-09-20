@@ -750,4 +750,4 @@ Elle dépend surtout de la valeur que ses habitants créent chaque jour.
 
 **Lorsqu'une société oublie cette différence, elle risque de confondre les billets avec la richesse elle-même. »**
 
-— **Cultivora Land**
+**Cultivora Land**

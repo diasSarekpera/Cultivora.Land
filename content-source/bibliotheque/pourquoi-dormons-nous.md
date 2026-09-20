@@ -125,4 +125,4 @@ C'est l'une des conditions qui rendent possible tout ce que nous faisons lorsque
 
 **« Chaque nuit, pendant que nous nous reposons, notre corps prépare silencieusement la journée de demain. »**
 
-— **Cultivora Land**
+**Cultivora Land**

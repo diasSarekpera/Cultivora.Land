@@ -128,4 +128,4 @@ Demander de l'aide est aussi une manière de prendre soin de soi.
 
 **« Une pensée est un visiteur. Une action est une décision. Ne laisse jamais un visiteur définir l'identité de la maison. »**
 
-— **Cultivora Land**
+**Cultivora Land**

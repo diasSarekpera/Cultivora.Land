@@ -1,4 +1,4 @@
-# Cultivora Land — Le jardin du savoir
+# Cultivora Land : Le jardin du savoir
 
 Bibliothèque de lecture. Palette monochrome verte (forêt profonde → vert
 clair) + crème comme unique neutre chaud, sans doré. Trois portes
@@ -9,12 +9,12 @@ soi-même**, **Créer de la valeur**.
 
 ```
 index.html                          Page d'accueil (hero, 3 portes, derniers articles)
-pages/blog/index.html               Liste de tous les articles
 pages/blog/<slug>/index.html        Page de lecture d'un article (8/8 construits)
+                                     (la page listing pages/blog/ a été retirée, remplacée par pages/contenus/)
 pages/contenus/index.html           Liste filtrable par porte (?porte=<id>)
 pages/about/index.html              À propos / mission (contenu tiré de pitch.md)
-pages/contact/index.html            Formulaire de contact (non connecté — voir plus bas)
-pages/abonnement/index.html         Formulaire d'abonnement (non connecté — voir plus bas)
+pages/contact/index.html            Formulaire de contact (non connecté, voir plus bas)
+pages/abonnement/index.html         Formulaire d'abonnement (non connecté, voir plus bas)
 styles/                             Variables, reset, styles globaux, composants, pages
 assets/images/logo.png              Logo officiel
 assets/images/og-default.jpg        Image de partage par défaut (1200×630)
@@ -29,7 +29,7 @@ content-source/pitch.md             Le pitch/mission du projet
 - Toutes les pages liées depuis le header/footer/accueil existent désormais :
   accueil, à propos, nos contenus (filtrable), blog (liste), 8 articles de
   blog, contact, abonnement. Plus aucun lien du site ne mène vers une page
-  inexistante — c'était la cause des « Not Found ».
+  inexistante : c'était la cause des « Not Found ».
 - Toutes les pages utilisent des chemins absolus (`/pages/...`,
   `/assets/...`, `/styles/...`) pour éviter les erreurs de chemins relatifs
   une fois déployé.
@@ -52,10 +52,10 @@ content-source/pitch.md             Le pitch/mission du projet
   Mailchimp...) ou ajoutez un petit backend. L'e-mail de contact affiché
   (`bonjour@cultivora-land.com`) est un espace réservé à remplacer par
   votre vraie adresse.
-- Les liens de réseaux sociaux du footer pointent vers `#` — à remplacer
+- Les liens de réseaux sociaux du footer pointent vers `#`, à remplacer
   par les vrais comptes.
 - Le temps de lecture affiché est calculé automatiquement (nombre de mots
-  du fichier Markdown source ÷ 180 mots/minute) — à ajuster si besoin.
+  du fichier Markdown source ÷ 180 mots/minute), à ajuster si besoin.
 
 ## Après déploiement
 
@@ -64,6 +64,6 @@ Pour vérifier que l'image de partage apparaît bien sur les réseaux :
 - Twitter/X : https://cards-dev.twitter.com/validator (ou partager en DM)
 - Général : https://www.opengraph.xyz/
 
-Ces outils lisent en direct la version déployée — pensez à redéployer le
+Ces outils lisent en direct la version déployée : pensez à redéployer le
 site sur Render avant de tester, et à vider leur cache si vous aviez déjà
 testé une ancienne version.

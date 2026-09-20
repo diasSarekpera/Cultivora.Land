@@ -1,15 +1,15 @@
-# Prompts — miniatures des articles (palette verte, sans doré)
+# Prompts : miniatures des articles (palette verte, sans doré)
 
 Structure identique à ton exemplaire ("Pourquoi l'argent perd-il de sa
 valeur ?") : portrait pensif à gauche dans une forêt éclairée par la
-lumière dorée du soleil (ça, on garde — c'est de l'éclairage
+lumière dorée du soleil (ça, on garde, c'est de l'éclairage
 photographique naturel, pas une couleur d'interface), titre en grand à
 côté, bandeau vertical vert foncé à droite avec le logo, le nom, la
 tagline et le bouton "Lecture".
 
 **Seul changement : tous les accents dorés du bandeau (ligne de
 séparation, tagline, bouton lecture, libellé "LECTURE") passent au vert
-clair `#7ed957` — plus aucune trace de doré dans l'interface.**
+clair `#7ed957`, plus aucune trace de doré dans l'interface.**
 
 Format : paysage 16:9, ~1280×720.
 
@@ -27,7 +27,7 @@ arrière-plan (lumière chaude naturelle, feuillage flouté au premier
 plan dans les coins). Par-dessus la photo, à droite du visage, un
 titre en grand texte gras condensé sans-serif, sur 2 à 3 lignes,
 aligné à gauche, en blanc avec une ombre portée noire douce pour la
-lisibilité — sauf la ligne ou le groupe de mots le plus important, qui
+lisibilité, sauf la ligne ou le groupe de mots le plus important, qui
 est en vert `#2f8f4e` (vert émeraude, pas trop clair pour rester
 lisible sur fond de forêt).
 
@@ -41,12 +41,12 @@ dessous "CULTIVORA" et "LAND" en blanc, gras, majuscules, sur deux
 lignes centrées. Sous le nom, un petit point vert clair (`#7ed957`)
 avec un fin trait horizontal vert clair de chaque côté. Puis "Le
 Jardin du Savoir" en italique, dans une police serif fine, en couleur
-crème (`#f6f1e4`) — PAS en doré.
+crème (`#f6f1e4`), PAS en doré.
 
 Plus bas dans le bandeau, un cercle avec une bordure fine vert clair
 (`#7ed957`) contenant une icône de triangle "lecture/play" de la même
 couleur vert clair, et sous le cercle le mot "LECTURE" en majuscules,
-espacé, en vert clair (`#7ed957`) — PAS en doré.
+espacé, en vert clair (`#7ed957`), PAS en doré.
 
 Aucune trace de couleur dorée ou jaune dans le bandeau : uniquement
 vert foncé, vert clair, blanc et crème.
@@ -75,7 +75,7 @@ celle à mettre en vert émeraude, le reste en blanc).
 | `pourquoi-une-bonne-idee-ne-suffit-pas`           | POURQUOI **UNE BONNE IDÉE** NE SUFFIT PAS ?                 |
 
 Note sur le dernier : le titre complet de l'article ("...pour créer
-une entreprise ?") est trop long pour tenir sur une miniature — je l'ai
+une entreprise ?") est trop long pour tenir sur une miniature, je l'ai
 raccourci pour l'image seulement. Le titre complet reste inchangé sur
 la page de l'article elle-même.
 
@@ -97,6 +97,6 @@ sans-serif sur 3 lignes, aligné à gauche : "POURQUOI" (blanc),
 bordure vert clair (#7ed957). Logo circulaire Cultivora Land en haut,
 puis "CULTIVORA LAND" en blanc gras, point et trait vert clair, "Le
 Jardin du Savoir" en italique crème (#f6f1e4), bouton cercle "lecture"
-et libellé "LECTURE" tous les deux en vert clair (#7ed957) — aucun
+et libellé "LECTURE" tous les deux en vert clair (#7ed957), aucun
 doré dans le bandeau.
 ```

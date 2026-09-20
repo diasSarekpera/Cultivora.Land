@@ -1,5 +1,5 @@
 /* ============================================================
-   GATES — les 3 portes du jardin du savoir
+   GATES : les 3 portes du jardin du savoir
 ============================================================ */
 
 .gates {
@@ -50,12 +50,11 @@
   border-radius: var(--radius-md);
   background: linear-gradient(160deg, var(--green-dark), var(--green-forest) 130%);
   border: 1px solid var(--border-on-green-soft);
-  transition: border-color 250ms ease, transform 250ms ease;
+  transition: border-color 250ms ease;
 }
 
 .gate-card:hover {
   border-color: var(--border-on-green);
-  transform: translateY(-4px);
 }
 
 .gate-card__icon {
@@ -106,4 +105,77 @@
 
 @media (max-width: 900px) {
   .gates__grid { grid-template-columns: 1fr; }
+}
+
+/* ------------------------------------------------------------
+   Variante liste numérotée (page d'accueil uniquement)
+------------------------------------------------------------ */
+
+.gates__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gate-row {
+  display: grid;
+  grid-template-columns: 88px 1fr auto;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--border-on-green-soft);
+}
+
+.gate-row:last-child {
+  border-bottom: 1px solid var(--border-on-green-soft);
+}
+
+.gate-row__number {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--green-bright);
+  opacity: 0.5;
+}
+
+.gate-row__title {
+  font-size: var(--text-lg);
+  color: var(--text-on-green-strong);
+}
+
+.gate-row__desc {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-on-green-mid);
+  line-height: 1.6;
+  max-width: 46em;
+}
+
+.gate-row__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--green-bright);
+  white-space: nowrap;
+  transition: color 200ms ease;
+}
+
+.gate-row__link svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 200ms ease;
+}
+
+.gate-row:hover .gate-row__link svg { transform: translateX(3px); }
+
+@media (max-width: 700px) {
+  .gate-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+    padding: var(--space-6) 0;
+  }
+  .gate-row__number { font-size: 2rem; }
+  .gate-row__link { margin-top: var(--space-1); }
 }

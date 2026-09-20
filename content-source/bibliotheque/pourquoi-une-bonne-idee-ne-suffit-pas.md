@@ -94,7 +94,7 @@ Lorsqu'il eut terminé, la femme resta silencieuse quelques instants.
 
 Puis elle lui posa une première question.
 
-— Combien de personnes rencontrent réellement ce problème ?
+« Combien de personnes rencontrent réellement ce problème ? »
 
 David hésita.
 
@@ -102,7 +102,7 @@ Il n'avait jamais cherché à le savoir.
 
 Elle poursuivit.
 
-— Parmi ces personnes, combien seraient prêtes à payer pour votre solution ?
+« Parmi ces personnes, combien seraient prêtes à payer pour votre solution ? »
 
 Cette fois encore...
 
@@ -110,7 +110,7 @@ Il ne savait pas répondre.
 
 Elle continua calmement.
 
-— Qui sera votre tout premier client ?
+« Qui sera votre tout premier client ? »
 
 Les écoles ?
 
@@ -796,4 +796,4 @@ Ce sont celles qui ont le mieux compris les besoins des êtres humains.
 
 **Elle réussit parce qu'elle a trouvé les bonnes conditions pour devenir un arbre. »**
 
-— **Cultivora Land**
+**Cultivora Land**

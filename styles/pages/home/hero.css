@@ -1,5 +1,5 @@
 /* ============================================================
-   HERO — page d'accueil
+   HERO : page d'accueil
 ============================================================ */
 
 .hero {
@@ -15,10 +15,10 @@
   position: relative;
   max-width: var(--container-max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--space-12);
+  text-align: center;
   padding-bottom: var(--space-20);
 }
 
@@ -64,6 +64,7 @@
 .hero__rule {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   margin: var(--space-5) 0;
 }
@@ -85,11 +86,14 @@
   color: var(--text-on-green-mid);
   max-width: 30em;
   line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-4);
   margin-top: var(--space-8);
   flex-wrap: wrap;
@@ -121,58 +125,6 @@
 .hero__btn:active { transform: scale(0.97); }
 .hero__btn svg { width: 16px; height: 16px; }
 
-.hero__art {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__art svg {
-  width: 100%;
-  max-width: 460px;
-  height: auto;
-}
-
-.hero__quote-band {
-  position: relative;
-  background: var(--cream);
-  color: var(--ink);
-  border-radius: 100% 100% 0 0 / 60px 60px 0 0;
-  padding: var(--space-8) var(--space-8) var(--space-10);
-  margin-top: -1px;
-}
-
-.hero__quote {
-  max-width: 640px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  text-align: center;
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: var(--text-md);
-}
-
-.hero__quote-leaf {
-  width: 16px;
-  height: 16px;
-  color: var(--green-mid);
-  flex-shrink: 0;
-}
-
 @media (max-width: 900px) {
   .hero { padding-top: 140px; }
-  .hero__inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .hero__rule { justify-content: center; }
-  .hero__desc { margin: 0 auto; }
-  .hero__actions { justify-content: center; }
-  .hero__art { order: -1; margin-bottom: var(--space-6); }
-  .hero__art svg { max-width: 280px; }
 }

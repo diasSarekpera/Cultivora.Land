@@ -112,4 +112,4 @@ C'est une nécessité pour préserver les équilibres qui rendent la vie possibl
 
 **« Là où l'homme voit parfois un simple arbre, la nature cache souvent un immense mécanisme de vie. »**
 
-— **Cultivora Land**
+**Cultivora Land**
