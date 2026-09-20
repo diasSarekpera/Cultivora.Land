@@ -154,26 +154,6 @@
   text-align: center;
 }
 
-.article-closing__rule {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  margin: 0 auto var(--space-8);
-}
-
-.article-closing__rule-line {
-  width: 48px;
-  height: 1px;
-  background: var(--border-on-green);
-}
-
-.article-closing__rule svg {
-  width: 15px;
-  height: 15px;
-  color: var(--green-bright);
-}
-
 .article-closing__quote {
   font-family: var(--font-display);
   font-style: italic;
