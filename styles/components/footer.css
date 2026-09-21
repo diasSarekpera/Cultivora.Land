@@ -88,7 +88,7 @@
   padding-top: var(--space-6);
   border-top: 1px solid var(--border-on-green-soft);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: var(--space-3);
@@ -97,6 +97,7 @@
 .site-footer__copyright {
   font-size: var(--text-xs);
   color: var(--text-on-green-soft);
+  text-align: center;
 }
 
 .site-footer__credit-sep {
@@ -117,30 +118,6 @@
   color: var(--green-bright);
   text-decoration-color: var(--green-bright);
 }
-
-.site-footer__socials {
-  display: flex;
-  gap: var(--space-3);
-}
-
-.site-footer__social-link {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-on-green-soft);
-  color: var(--text-on-green-mid);
-  transition: color var(--duration-base) var(--ease-in-out), border-color var(--duration-base) var(--ease-in-out);
-}
-
-.site-footer__social-link:hover {
-  color: var(--green-bright);
-  border-color: var(--border-on-green);
-}
-
-.site-footer__social-link svg { width: 16px; height: 16px; }
 
 /* ------------------------------------------------------------
    Tablette (≤ 800px) : la marque passe en pleine largeur,

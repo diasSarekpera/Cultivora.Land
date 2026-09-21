@@ -58,7 +58,7 @@
   /* Espacement horizontal fluide des sections : resserre en douceur
      entre le très petit mobile (320px) et le desktop, sans jamais
      coller le contenu aux bords ni gaspiller d'espace en grand écran. */
-  --section-x: clamp(1.125rem, 0.7rem + 3.5vw, 2rem);
+  --section-x: clamp(1rem, 0.5rem + 3vw, 2rem);
 
   /* Rythme vertical fluide des grandes sections (hero, gates, latest) */
   --section-y: clamp(3rem, 2rem + 4vw, 5rem);

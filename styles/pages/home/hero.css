@@ -142,7 +142,9 @@
 ------------------------------------------------------------ */
 @media (max-width: 480px) {
   .hero { padding-top: 120px; }
-  .hero__desc { max-width: none; }
+  .hero__tagline { margin-top: var(--space-3); }
+  .hero__rule { margin: var(--space-6) 0; }
+  .hero__desc { max-width: none; margin-top: var(--space-2); line-height: 1.65; }
   .hero__actions {
     flex-direction: column;
     align-items: stretch;
@@ -150,6 +152,8 @@
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: var(--space-10);
+    gap: var(--space-3);
   }
   .hero__btn { justify-content: center; min-height: 48px; }
 }
