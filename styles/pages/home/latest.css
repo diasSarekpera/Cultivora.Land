@@ -4,7 +4,7 @@
 
 .latest {
   background: var(--green-dark);
-  padding: var(--space-20) var(--space-8);
+  padding: var(--section-y) var(--section-x);
 }
 
 .latest__inner {
@@ -44,7 +44,7 @@
   color: var(--text-on-green-strong);
   border-bottom: 1px solid var(--border-on-green);
   padding-bottom: var(--space-1);
-  transition: border-color 200ms ease, color 200ms ease;
+  transition: border-color var(--duration-base) var(--ease-in-out), color var(--duration-base) var(--ease-in-out);
 }
 
 .latest__all-link:hover { border-color: var(--green-bright); color: var(--green-bright); }
@@ -63,11 +63,12 @@
   overflow: hidden;
   background: var(--green-forest);
   border: 1px solid var(--border-on-green-soft);
-  transition: border-color 250ms ease;
+  transition: border-color var(--duration-base) var(--ease-in-out), box-shadow var(--duration-base) var(--ease-in-out);
 }
 
 .article-card:hover {
   border-color: var(--border-on-green);
+  box-shadow: var(--shadow-card);
 }
 
 .article-card__thumb {
@@ -87,7 +88,7 @@
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  transition: transform 350ms ease;
+  transition: transform var(--duration-slow) var(--ease-standard);
 }
 
 .article-card:hover .article-card__thumb-img { transform: scale(1.04); }
@@ -116,15 +117,6 @@
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--green-pale);
-}
-
-.article-card__thumb-leaf {
-  position: absolute;
-  top: var(--space-4);
-  right: var(--space-4);
-  width: 26px;
-  height: 26px;
-  color: rgba(215, 236, 201, 0.35);
 }
 
 .article-card__body {
@@ -164,10 +156,25 @@
 
 .article-card__read svg { width: 12px; height: 12px; }
 
+/* ------------------------------------------------------------
+   Grande tablette (≤ 1100px) : 3 → 2 colonnes
+------------------------------------------------------------ */
 @media (max-width: 1100px) {
-  .latest__grid { grid-template-columns: repeat(2, 1fr); }
+  .latest__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
 }
 
+/* ------------------------------------------------------------
+   Mobile (≤ 640px) : 1 colonne, tête de section empilée pour que
+   le lien "Voir tous les contenus" ne pousse pas le titre
+------------------------------------------------------------ */
 @media (max-width: 640px) {
-  .latest__grid { grid-template-columns: 1fr; }
+  .latest__grid { grid-template-columns: 1fr; gap: var(--space-6); }
+  .latest__head { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+}
+
+/* ------------------------------------------------------------
+   Petit mobile (≤ 380px) : corps de carte plus compact
+------------------------------------------------------------ */
+@media (max-width: 380px) {
+  .article-card__body { padding: var(--space-4); }
 }

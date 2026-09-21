@@ -8,7 +8,7 @@
   background:
     radial-gradient(ellipse at 78% 20%, rgba(126, 217, 87, 0.16), transparent 55%),
     linear-gradient(160deg, var(--green-dark) 0%, var(--green-deepest) 70%);
-  padding: 168px var(--space-8) 0;
+  padding: 168px var(--section-x) 0;
 }
 
 .hero__inner {
@@ -19,15 +19,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: var(--space-20);
-}
-
-.hero__leaves-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.5;
-  pointer-events: none;
+  padding-bottom: var(--section-y);
 }
 
 .hero__content {
@@ -107,24 +99,57 @@
   border-radius: var(--radius-pill);
   font-size: var(--text-sm);
   font-weight: 600;
-  transition: background 200ms ease, border-color 200ms ease, transform 100ms ease;
+  transition: background var(--duration-base) var(--ease-in-out),
+              border-color var(--duration-base) var(--ease-in-out),
+              color var(--duration-base) var(--ease-in-out),
+              box-shadow var(--duration-base) var(--ease-in-out),
+              transform var(--duration-fast) var(--ease-in-out);
 }
 
 .hero__btn--fill {
   background: var(--green-bright);
   color: var(--green-deepest);
 }
-.hero__btn--fill:hover { background: var(--green-pale); }
+.hero__btn--fill:hover {
+  background: var(--green-pale);
+  box-shadow: var(--shadow-glow);
+}
 
 .hero__btn--outline {
   border: 1px solid var(--border-on-green);
   color: var(--text-on-green-strong);
 }
-.hero__btn--outline:hover { border-color: var(--green-bright); color: var(--green-bright); }
+.hero__btn--outline:hover {
+  border-color: var(--green-bright);
+  color: var(--green-bright);
+  box-shadow: var(--shadow-glow-soft);
+}
 
 .hero__btn:active { transform: scale(0.97); }
 .hero__btn svg { width: 16px; height: 16px; }
 
+/* ------------------------------------------------------------
+   Tablette (≤ 900px)
+------------------------------------------------------------ */
 @media (max-width: 900px) {
   .hero { padding-top: 140px; }
+}
+
+/* ------------------------------------------------------------
+   Petit mobile (≤ 480px) : les boutons passent en pleine largeur,
+   empilés, pour un vrai confort au doigt plutôt qu'un couple de
+   pilules centrées et tassées l'une contre l'autre
+------------------------------------------------------------ */
+@media (max-width: 480px) {
+  .hero { padding-top: 120px; }
+  .hero__desc { max-width: none; }
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__btn { justify-content: center; min-height: 48px; }
 }

@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="/styles/bases/reset.css" />
   <link rel="stylesheet" href="/styles/bases/base.css" />
   <link rel="stylesheet" href="/styles/components/header.css" />
+  <link rel="stylesheet" href="/styles/components/motion.css" />
   <link rel="stylesheet" href="/styles/components/footer.css" />
   <link rel="stylesheet" href="/styles/pages/home/latest.css" />
   <link rel="stylesheet" href="/styles/pages/article/article.css" />
@@ -44,7 +45,10 @@
     <div class="header__inner">
 
       <a href="/" class="header__brand" aria-label="Retour à l'accueil de Cultivora Land">
-        <img class="header__leaf" src="/assets/images/logo.png" alt="" width="34" height="34" />
+        <picture>
+          <source srcset="/assets/images/logo-small.webp" type="image/webp" />
+          <img class="header__leaf" src="/assets/images/logo-small.png" alt="" width="34" height="34" />
+        </picture>
         <span class="header__wordmark">
           <span class="header__wordmark-title">Cultivora Land</span>
           <span class="header__wordmark-tagline">LE JARDIN DU SAVOIR</span>
@@ -83,12 +87,36 @@
     </div>
   </header>
 
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__backdrop"></div>
+    <nav class="mobile-nav__panel" aria-label="Navigation mobile">
+      <div class="mobile-nav__head">
+        <span class="mobile-nav__brand">Cultivora Land</span>
+        <button class="mobile-nav__close" aria-label="Fermer le menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav__list">
+          <li class="mobile-nav__item"><a href="/" class="mobile-nav__link">Accueil</a></li>
+          <li class="mobile-nav__item"><a href="/pages/about/" class="mobile-nav__link">À propos</a></li>
+          <li class="mobile-nav__item"><a href="/pages/contenus/" class="mobile-nav__link">Nos contenus</a></li>
+          <li class="mobile-nav__item"><a href="/pages/contact/" class="mobile-nav__link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav__actions">
+        <a href="/pages/abonnement/" class="mobile-nav__subscribe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          S'abonner
+        </a>
+      </div>
+    </nav>
+  </div>
+
   <main>
 
     <section class="article-hero" aria-label="Présentation de l'article">
       <div class="article-hero__inner">
 
-        <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
+        <nav class="article-breadcrumb load-in load-in-1" aria-label="Fil d'Ariane">
           <a href="/">Accueil</a>
           <span aria-hidden="true">/</span>
           <a href="/pages/contenus/">Nos contenus</a>
@@ -96,14 +124,14 @@
           <span aria-current="page">Créer de la valeur</span>
         </nav>
 
-        <span class="article-hero__gate">
+        <span class="article-hero__gate load-in load-in-1">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           Créer de la valeur
         </span>
 
-        <h1 class="article-hero__title">Pourquoi l'argent perd-il de sa valeur ?</h1>
+        <h1 class="article-hero__title load-in load-in-2">Pourquoi l'argent perd-il de sa valeur ?</h1>
 
-        <div class="article-hero__meta">
+        <div class="article-hero__meta load-in load-in-3">
           <span class="article-hero__meta-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
             16 min de lecture
@@ -112,8 +140,11 @@
           <span>Cultivora Land</span>
         </div>
 
-        <div class="article-hero__cover">
-          <img class="article-hero__cover-img" src="/assets/images/articles/pourquoi-largent-perd-il-de-sa-valeur.jpg" alt="Pourquoi l'argent perd-il de sa valeur ?" />
+        <div class="article-hero__cover load-in load-in-4">
+          <picture>
+            <source srcset="/assets/images/articles/pourquoi-largent-perd-il-de-sa-valeur.webp" type="image/webp" />
+            <img class="article-hero__cover-img" src="/assets/images/articles/pourquoi-largent-perd-il-de-sa-valeur.jpg" alt="Pourquoi l'argent perd-il de sa valeur ?" />
+          </picture>
         </div>
 
       </div>
@@ -493,7 +524,7 @@
           <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
           <span class="article-divider-line"></span>
         </div>
-        <div class="article-closing">
+        <div class="article-closing reveal">
           <p class="article-closing__quote"><strong>« L'argent peut circuler de main en main...</strong><br><strong>mais la véritable richesse naît toujours des mains qui créent, construisent et produisent.</strong><br><strong>Lorsqu'une société oublie cette différence, elle risque de confondre les billets avec la richesse elle-même. »</strong></p>
           <span class="article-closing__sig">
             <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 4C10 4 5 9 5 16c0 6 4.5 11 11 12 6.5-1 11-6 11-12 0-7-5-12-11-12z" fill="currentColor"/></svg>
@@ -509,11 +540,14 @@
         <span class="article-next__eyebrow">Continuer la lecture</span>
         <h2 class="article-next__title">Sur le même thème</h2>
 
-        <div class="article-next__grid">
+        <div class="article-next__grid reveal-stagger">
 
           <article class="article-card">
             <div class="article-card__thumb">
-              <img class="article-card__thumb-img" src="/assets/images/articles/pourquoi-une-bonne-idee-ne-suffit-pas.jpg" alt="" loading="lazy" />
+              <picture>
+                <source srcset="/assets/images/articles/pourquoi-une-bonne-idee-ne-suffit-pas.webp" type="image/webp" />
+                <img class="article-card__thumb-img" src="/assets/images/articles/pourquoi-une-bonne-idee-ne-suffit-pas.jpg" alt="Pourquoi une bonne idée ne suffit-elle pas pour créer une entreprise ?" loading="lazy" />
+              </picture>
               <span class="article-card__gate-badge">Créer de la valeur</span>
             </div>
             <div class="article-card__body">
@@ -528,7 +562,10 @@
 
           <article class="article-card">
             <div class="article-card__thumb">
-              <img class="article-card__thumb-img" src="/assets/images/articles/comment-les-forets-rafraichissent-la-planete.jpg" alt="" loading="lazy" />
+              <picture>
+                <source srcset="/assets/images/articles/comment-les-forets-rafraichissent-la-planete.webp" type="image/webp" />
+                <img class="article-card__thumb-img" src="/assets/images/articles/comment-les-forets-rafraichissent-la-planete.jpg" alt="Comment les forêts rafraîchissent naturellement notre planète" loading="lazy" />
+              </picture>
               <span class="article-card__gate-badge">Comprendre le monde</span>
             </div>
             <div class="article-card__body">
@@ -543,7 +580,10 @@
 
           <article class="article-card">
             <div class="article-card__thumb">
-              <img class="article-card__thumb-img" src="/assets/images/articles/pourquoi-payons-nous-des-impots.jpg" alt="" loading="lazy" />
+              <picture>
+                <source srcset="/assets/images/articles/pourquoi-payons-nous-des-impots.webp" type="image/webp" />
+                <img class="article-card__thumb-img" src="/assets/images/articles/pourquoi-payons-nous-des-impots.jpg" alt="Pourquoi payons-nous des impôts ?" loading="lazy" />
+              </picture>
               <span class="article-card__gate-badge">Comprendre le monde</span>
             </div>
             <div class="article-card__body">
@@ -567,7 +607,10 @@
 
       <div>
         <div class="site-footer__brand">
-          <img class="site-footer__leaf" src="/assets/images/logo.png" alt="" width="26" height="26" />
+          <picture>
+          <source srcset="/assets/images/logo-small.webp" type="image/webp" />
+          <img class="site-footer__leaf" src="/assets/images/logo-small.png" alt="" width="26" height="26" />
+        </picture>
           <span class="site-footer__wordmark">Cultivora Land</span>
         </div>
         <p class="site-footer__tagline">Un espace d'apprentissage, d'inspiration et de découverte pour mieux comprendre le monde : trois portes, un seul jardin.</p>
@@ -592,7 +635,7 @@
     </div>
 
     <div class="site-footer__bottom">
-      <p class="site-footer__copyright">© 2026 Cultivora Land. Tous droits réservés.</p>
+      <p class="site-footer__copyright">© 2026 Cultivora Land. Tous droits réservés. <span class="site-footer__credit-sep" aria-hidden="true">·</span> Pensé et conçu par <a href="https://dsk.ink" class="site-footer__credit-link" target="_blank" rel="noopener noreferrer">Dias Saré Kpéra</a></p>
       <div class="site-footer__socials">
         <a href="#" class="site-footer__social-link" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
@@ -607,5 +650,6 @@
     </div>
   </footer>
 
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

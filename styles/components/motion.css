@@ -1,0 +1,59 @@
+/* ============================================================
+   MOTION : système d'animation partagé par tout le site
+   - Apparition au chargement (hero, en-tête d'article) : CSS pur,
+     déclenché immédiatement, pas besoin de JS pour du contenu
+     déjà visible à l'écran.
+   - Apparition au scroll (.reveal / .reveal-stagger) : amélioration
+     progressive. Le contenu est visible par défaut ; c'est le script
+     (assets/js/main.js, Intersection Observer) qui ajoute la classe
+     .reveal-hidden juste avant d'observer, puis .is-visible quand
+     l'élément entre dans le viewport. Si JS ne s'exécute pas, rien
+     n'est jamais masqué : le contenu reste simplement visible.
+   Tout reste inactif si l'utilisateur préfère moins de mouvement
+   (voir la règle prefers-reduced-motion globale dans reset.css).
+============================================================ */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Apparition au chargement (au-dessus de la ligne de flottaison) ── */
+
+.load-in {
+  animation: fade-up var(--duration-reveal) var(--ease-standard) both;
+}
+
+.load-in-1 { animation-delay: 0ms; }
+.load-in-2 { animation-delay: 90ms; }
+.load-in-3 { animation-delay: 180ms; }
+.load-in-4 { animation-delay: 270ms; }
+.load-in-5 { animation-delay: 360ms; }
+
+/* ── Apparition au scroll (progressive enhancement) ── */
+
+.reveal,
+.reveal-stagger > * {
+  transition: opacity var(--duration-reveal) var(--ease-standard),
+              transform var(--duration-reveal) var(--ease-standard);
+}
+
+.reveal.reveal-hidden,
+.reveal-stagger.reveal-hidden > * {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.reveal.is-visible,
+.reveal-stagger.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Échelonnement pour les grilles et listes (cartes, portes...) */
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 400ms; }

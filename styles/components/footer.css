@@ -5,7 +5,7 @@
 .site-footer {
   background: var(--green-deepest);
   border-top: 1px solid var(--border-on-green-soft);
-  padding: var(--space-16) var(--space-8) var(--space-8);
+  padding: var(--space-16) var(--section-x) var(--space-8);
 }
 
 .site-footer__inner {
@@ -58,12 +58,29 @@
 }
 
 .site-footer__links a {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
   font-size: var(--text-sm);
   color: var(--text-on-green-mid);
-  transition: color 200ms ease;
+  transition: color var(--duration-base) var(--ease-in-out);
+}
+
+.site-footer__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-base) var(--ease-standard);
 }
 
 .site-footer__links a:hover { color: var(--text-on-green-strong); }
+.site-footer__links a:hover::after { transform: scaleX(1); }
 
 .site-footer__bottom {
   max-width: var(--container-max);
@@ -82,6 +99,25 @@
   color: var(--text-on-green-soft);
 }
 
+.site-footer__credit-sep {
+  margin: 0 var(--space-1);
+  opacity: 0.6;
+}
+
+.site-footer__credit-link {
+  color: var(--text-on-green-mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border-on-green);
+  transition: color var(--duration-base) var(--ease-in-out),
+              text-decoration-color var(--duration-base) var(--ease-in-out);
+}
+
+.site-footer__credit-link:hover {
+  color: var(--green-bright);
+  text-decoration-color: var(--green-bright);
+}
+
 .site-footer__socials {
   display: flex;
   gap: var(--space-3);
@@ -96,7 +132,7 @@
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-on-green-soft);
   color: var(--text-on-green-mid);
-  transition: color 200ms ease, border-color 200ms ease;
+  transition: color var(--duration-base) var(--ease-in-out), border-color var(--duration-base) var(--ease-in-out);
 }
 
 .site-footer__social-link:hover {
@@ -106,6 +142,22 @@
 
 .site-footer__social-link svg { width: 16px; height: 16px; }
 
+/* ------------------------------------------------------------
+   Tablette (≤ 800px) : la marque passe en pleine largeur,
+   les deux colonnes de liens restent côte à côte
+------------------------------------------------------------ */
 @media (max-width: 800px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8) var(--space-6);
+  }
+  .site-footer__inner > div:first-child { grid-column: 1 / -1; }
+}
+
+/* ------------------------------------------------------------
+   Mobile (≤ 480px) : tout s'empile, bas de footer centré
+------------------------------------------------------------ */
+@media (max-width: 480px) {
   .site-footer__inner { grid-template-columns: 1fr; gap: var(--space-8); }
+  .site-footer__bottom { flex-direction: column; text-align: center; }
 }

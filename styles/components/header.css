@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   z-index: 20;
-  padding: var(--space-6) var(--space-8);
+  padding: var(--space-6) var(--section-x);
 }
 
 .header__inner {
@@ -69,7 +69,7 @@
   color: var(--text-on-green-mid);
   padding-bottom: var(--space-1);
   border-bottom: 2px solid transparent;
-  transition: color 200ms ease, border-color 200ms ease;
+  transition: color var(--duration-base) var(--ease-in-out), border-color var(--duration-base) var(--ease-in-out);
 }
 
 .header__nav-link:hover { color: var(--text-on-green-strong); }
@@ -95,10 +95,15 @@
   font-size: var(--text-sm);
   font-weight: 600;
   border-radius: var(--radius-pill);
-  transition: background 200ms ease, transform 100ms ease;
+  transition: background var(--duration-base) var(--ease-in-out),
+              box-shadow var(--duration-base) var(--ease-in-out),
+              transform var(--duration-fast) var(--ease-in-out);
 }
 
-.header__subscribe:hover { background: var(--green-pale); }
+.header__subscribe:hover {
+  background: var(--green-pale);
+  box-shadow: var(--shadow-glow);
+}
 .header__subscribe:active { transform: scale(0.97); }
 
 .header__subscribe svg { width: 16px; height: 16px; }
@@ -111,7 +116,7 @@
   justify-content: center;
   border-radius: var(--radius-pill);
   color: var(--text-on-green-mid);
-  transition: color 200ms ease, background 200ms ease;
+  transition: color var(--duration-base) var(--ease-in-out), background var(--duration-base) var(--ease-in-out);
 }
 
 .header__search:hover {
@@ -123,8 +128,8 @@
 
 .header__burger {
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -136,11 +141,150 @@
   height: 2px;
   background: var(--text-on-green-strong);
   border-radius: 2px;
+  transition: transform var(--duration-base) var(--ease-in-out), opacity var(--duration-base) var(--ease-in-out);
 }
 
+/* ------------------------------------------------------------
+   Tablette et mobile (≤ 900px) : nav horizontale → burger
+------------------------------------------------------------ */
 @media (max-width: 900px) {
   .header__nav { display: none; }
   .header__subscribe span { display: none; }
-  .header__subscribe { padding: var(--space-2); width: 38px; height: 38px; justify-content: center; }
+  .header__subscribe { padding: var(--space-2); width: 44px; height: 44px; justify-content: center; }
   .header__burger { display: flex; }
+}
+
+/* ------------------------------------------------------------
+   Petit mobile (≤ 420px) : on retire la recherche de la barre,
+   elle reste accessible depuis le menu si besoin, pour laisser
+   respirer le logo qui devient la priorité visuelle
+------------------------------------------------------------ */
+@media (max-width: 420px) {
+  .header { padding: var(--space-4) var(--section-x); }
+  .header__search { display: none; }
+  .header__wordmark-tagline { display: none; }
+}
+
+/* ============================================================
+   NAVIGATION MOBILE (tiroir plein écran)
+============================================================ */
+
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-slow) var(--ease-in-out), visibility 0s linear var(--duration-slow);
+}
+
+.mobile-nav.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity var(--duration-slow) var(--ease-in-out);
+}
+
+.mobile-nav__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 36, 23, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.mobile-nav__panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(88vw, 380px);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5) var(--space-6) var(--space-8);
+  background: var(--green-deepest);
+  border-left: 1px solid var(--border-on-green-soft);
+  transform: translateX(100%);
+  transition: transform var(--duration-slow) var(--ease-standard);
+  overflow-y: auto;
+}
+
+.mobile-nav.is-open .mobile-nav__panel {
+  transform: translateX(0);
+}
+
+.mobile-nav__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+}
+
+.mobile-nav__brand {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  color: var(--text-on-green-strong);
+}
+
+.mobile-nav__close {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-on-green-strong);
+  border-radius: var(--radius-pill);
+  transition: background var(--duration-base) var(--ease-in-out);
+  flex-shrink: 0;
+}
+
+.mobile-nav__close:hover { background: var(--border-on-green-soft); }
+.mobile-nav__close svg { width: 20px; height: 20px; }
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav__item { border-bottom: 1px solid var(--border-on-green-soft); }
+.mobile-nav__item:first-child { border-top: 1px solid var(--border-on-green-soft); }
+
+.mobile-nav__link {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--text-on-green-mid);
+  transition: color var(--duration-base) var(--ease-in-out);
+}
+
+.mobile-nav__item.is-active .mobile-nav__link { color: var(--green-bright); }
+
+.mobile-nav__actions {
+  margin-top: auto;
+  padding-top: var(--space-8);
+}
+
+.mobile-nav__subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 52px;
+  width: 100%;
+  background: var(--green-bright);
+  color: var(--green-deepest);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transition: background var(--duration-base) var(--ease-in-out),
+              transform var(--duration-fast) var(--ease-in-out);
+}
+
+.mobile-nav__subscribe:hover { background: var(--green-pale); }
+.mobile-nav__subscribe:active { transform: scale(0.98); }
+
+@media (max-width: 380px) {
+  .mobile-nav__panel { width: 100vw; border-left: none; }
 }

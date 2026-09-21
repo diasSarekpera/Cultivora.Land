@@ -37,10 +37,10 @@
   --text-sm:   0.9375rem;
   --text-base: 1.0625rem;
   --text-md:   1.1875rem;
-  --text-lg:   1.375rem;
-  --text-xl:   1.75rem;
-  --text-2xl:  2.5rem;
-  --text-3xl:  3.5rem;
+  --text-lg:   clamp(1.25rem, 1.1rem + 0.6vw, 1.375rem);
+  --text-xl:   clamp(1.375rem, 1.15rem + 1vw, 1.75rem);
+  --text-2xl:  clamp(1.75rem, 1.35rem + 1.8vw, 2.5rem);
+  --text-3xl:  clamp(2.25rem, 1.5rem + 3.2vw, 3.5rem);
 
   /* ── Espacements ── */
   --space-1:  0.25rem;
@@ -55,6 +55,14 @@
   --space-16: 4rem;
   --space-20: 5rem;
 
+  /* Espacement horizontal fluide des sections : resserre en douceur
+     entre le très petit mobile (320px) et le desktop, sans jamais
+     coller le contenu aux bords ni gaspiller d'espace en grand écran. */
+  --section-x: clamp(1.125rem, 0.7rem + 3.5vw, 2rem);
+
+  /* Rythme vertical fluide des grandes sections (hero, gates, latest) */
+  --section-y: clamp(3rem, 2rem + 4vw, 5rem);
+
   /* ── Rayons ── */
   --radius-sm:   4px;
   --radius-md:   10px;
@@ -62,4 +70,18 @@
 
   /* ── Mise en page ── */
   --container-max: 1200px;
+
+  /* ── Motion (courbes & durées cohérentes sur tout le site) ── */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);   /* sorties douces : reveal, panneaux */
+  --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);   /* va-et-vient : hover, focus */
+  --duration-fast:   160ms;  /* hover, focus, icônes */
+  --duration-base:   240ms;  /* changements d'état */
+  --duration-slow:   420ms;  /* transitions de section */
+  --duration-reveal: 650ms;  /* apparitions (fade up, scroll reveal) */
+
+  /* ── Ombres (échelle unique, réutilisée partout) ── */
+  --shadow-card:       0 16px 40px -20px rgba(0, 0, 0, 0.45);                    /* profondeur des cartes au survol */
+  --shadow-glow:       0 8px 24px -10px rgba(var(--green-bright-rgb), 0.5);      /* boutons pleins au survol */
+  --shadow-glow-soft:  0 8px 24px -12px rgba(var(--green-bright-rgb), 0.35);     /* boutons outline au survol */
+  --shadow-focus-ring: 0 0 0 3px rgba(var(--green-bright-rgb), 0.18);            /* focus des champs de formulaire */
 }
