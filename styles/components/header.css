@@ -284,6 +284,7 @@
 
 .mobile-nav__subscribe:hover { background: var(--green-pale); }
 .mobile-nav__subscribe:active { transform: scale(0.98); }
+.mobile-nav__subscribe svg { width: 18px; height: 18px; flex-shrink: 0; }
 
 @media (max-width: 380px) {
   .mobile-nav__panel { width: 100vw; border-left: none; }
