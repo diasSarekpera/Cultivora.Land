@@ -72,6 +72,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transform: scale(1.04); /* même zoom que les cartes : retire la bordure trop lumineuse */
 }
 
 .article-hero__title {

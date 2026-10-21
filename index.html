@@ -28,7 +28,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles/bases/variables.css" />
   <link rel="stylesheet" href="styles/bases/reset.css" />
@@ -51,7 +51,7 @@
           <img class="header__leaf" src="assets/images/logo-small.png" alt="" width="34" height="34" />
         </picture>
         <span class="header__wordmark">
-          <span class="header__wordmark-title">Cultivora Land</span>
+          <span class="header__wordmark-title">Cultivora <span class="wordmark-land">Land</span></span>
           <span class="header__wordmark-tagline">LE JARDIN DU SAVOIR</span>
         </span>
       </a>
@@ -92,7 +92,7 @@
     <div class="mobile-nav__backdrop"></div>
     <nav class="mobile-nav__panel" aria-label="Navigation mobile">
       <div class="mobile-nav__head">
-        <span class="mobile-nav__brand">Cultivora Land</span>
+        <span class="mobile-nav__brand">Cultivora <span class="wordmark-land">Land</span></span>
         <button class="mobile-nav__close" aria-label="Fermer le menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
@@ -225,6 +225,24 @@
           <article class="article-card">
             <div class="article-card__thumb">
               <picture>
+                <source srcset="/assets/images/articles/pourquoi-payons-nous-des-impots.webp" type="image/webp" />
+                <img class="article-card__thumb-img" src="/assets/images/articles/pourquoi-payons-nous-des-impots.jpg" alt="Pourquoi payons-nous des impôts ?" loading="lazy" />
+              </picture>
+              <span class="article-card__gate-badge">Comprendre le monde</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Pourquoi payons-nous des impôts ?</h3>
+              <p class="article-card__excerpt">Chaque mois, une partie de notre salaire disparaît avant même d'arriver dans notre poche. À quoi sert réellement cet argent ?</p>
+              <a href="/pages/blog/pourquoi-payons-nous-des-impots/" class="article-card__read">
+                Lire
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-card__thumb">
+              <picture>
                 <source srcset="/assets/images/articles/pourquoi-vieillissons-nous.webp" type="image/webp" />
                 <img class="article-card__thumb-img" src="/assets/images/articles/pourquoi-vieillissons-nous.jpg" alt="Pourquoi vieillissons-nous ?" loading="lazy" />
               </picture>
@@ -327,7 +345,7 @@
           <source srcset="assets/images/logo-small.webp" type="image/webp" />
           <img class="site-footer__leaf" src="assets/images/logo-small.png" alt="" width="26" height="26" />
         </picture>
-          <span class="site-footer__wordmark">Cultivora Land</span>
+          <span class="site-footer__wordmark">Cultivora <span class="wordmark-land">Land</span></span>
         </div>
         <p class="site-footer__tagline">Un espace d'apprentissage, d'inspiration et de découverte pour mieux comprendre le monde : trois portes, un seul jardin.</p>
       </div>

@@ -9,7 +9,7 @@ soi-même**, **Créer de la valeur**.
 
 ```
 index.html                          Page d'accueil (hero, 3 portes, derniers articles)
-pages/blog/<slug>/index.html        Page de lecture d'un article (5 publiés)
+pages/blog/<slug>/index.html        Page de lecture d'un article (6 publiés)
                                      (la page listing pages/blog/ a été retirée, remplacée par pages/contenus/)
 pages/contenus/index.html           Liste filtrable par porte (?porte=<id>)
 pages/about/index.html              À propos / mission (contenu tiré de pitch.md)
@@ -27,13 +27,13 @@ content-source/pitch.md             Le pitch/mission du projet
 ## Publication (mise à jour)
 
 - **Dépubliés** (pages HTML retirées du site, textes `.md`, miniatures et
-  entrées JSON conservés, `published: false`) : les 6 autres articles (« Sommes-nous vraiment nos pensées ? » et « Pourquoi bâillons-nous ? » ont été republiés).
+  entrées JSON conservés, `published: false`) : les 5 autres articles (« Sommes-nous vraiment nos pensées ? » et « Pourquoi bâillons-nous ? » ont été republiés).
   Les anciennes pages restent récupérables dans l'historique git.
 - **Publié** : `qui-a-reellement-ecrit-la-bible` (porte « Comprendre le monde ») et
   `sommes-nous-vraiment-nos-pensees`, `pourquoi-baillons-nous` et
-  `pourquoi-avons-nous-besoin-de-croire` et `pourquoi-vieillissons-nous` (porte « Se comprendre soi-même »).
-  La miniature de `pourquoi-vieillissons-nous` est un **placeholder** : remplacer
-  `assets/images/articles/pourquoi-vieillissons-nous.jpg` et `.webp` (1200×674).
+  `pourquoi-avons-nous-besoin-de-croire` et `pourquoi-vieillissons-nous` (porte « Se comprendre soi-même »), ainsi que
+  `pourquoi-payons-nous-des-impots` (porte « Comprendre le monde »).
+  Les miniatures des articles publiés sont toutes en place (1200×674).
   Les miniatures de ces deux articles (Bible, croire) sont en place (1200×674).
   La miniature de la Bible est en place (`assets/images/articles/qui-a-reellement-ecrit-la-bible.jpg` et `.webp`, 1200×674).
 - La section « Sur le même thème » est absente de la page tant qu'aucun
@@ -82,3 +82,24 @@ Pour vérifier que l'image de partage apparaît bien sur les réseaux :
 Ces outils lisent en direct la version déployée : pensez à redéployer le
 site sur Render avant de tester, et à vider leur cache si vous aviez déjà
 testé une ancienne version.
+
+
+## Page d'abonnement (front prêt, backend à brancher)
+
+Le formulaire de `pages/abonnement/` est terminé côté interface : validation de
+l'adresse, état d'envoi, message de succès, messages d'erreur, champ anti-spam
+(`website`, doit rester vide). Fichiers : `styles/pages/abonnement/abonnement.css`
+et `assets/js/subscribe.js`.
+
+**Contrat attendu du backend** : `POST /api/subscribe` (modifiable via l'attribut
+`data-endpoint` du formulaire), corps JSON `{ "email": "..." }` :
+
+| Réponse | Effet à l'écran |
+| --- | --- |
+| 2xx | « Merci, à très vite ! » (inscription enregistrée) |
+| 400 / 422 | « Cette adresse e-mail ne semble pas valide. » |
+| 429 | « Trop de tentatives. Réessayez dans quelques minutes. » |
+| autre / réseau / > 12 s | « L'inscription est momentanément indisponible… » |
+
+Tant que ce point d'entrée n'existe pas, un visiteur qui s'abonne voit le message
+« momentanément indisponible » : aucune fausse confirmation n'est affichée.

@@ -88,10 +88,11 @@
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  transition: transform var(--duration-slow) var(--ease-standard);
+  /* Zoom permanent : rogne ~2 % de chaque bord, ce qui retire la fine
+     bordure vert clair trop lumineuse des miniatures. Même rendu au
+     repos, au survol et au clic. */
+  transform: scale(1.04);
 }
-
-.article-card:hover .article-card__thumb-img { transform: scale(1.04); }
 
 .article-card__thumb::after {
   content: "";

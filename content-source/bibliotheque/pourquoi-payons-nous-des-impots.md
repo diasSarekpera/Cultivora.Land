@@ -32,6 +32,8 @@ Et que se passerait-il si personne n'en payait ?
 
 ---
 
+## Où est passé le reste de mon salaire ?
+
 Adam venait tout juste d'obtenir son premier emploi.
 
 Il attendait son premier salaire avec impatience.
@@ -102,6 +104,8 @@ Pour la première fois, il comprit que cette partie de son salaire cachait peut-
 
 ---
 
+## Ce qu'aucun individu ne peut faire seul
+
 Cette question, Adam est loin d'être le seul à se la poser.
 
 Pour y répondre, il faut d'abord comprendre une idée essentielle.
@@ -138,23 +142,19 @@ Autrement dit, certaines choses ne peuvent exister que grâce à un effort colle
 
 Les économistes parlent alors de **biens publics**.
 
-Il s'agit de biens ou de services dont toute la population peut bénéficier.
+Les plus purs sont ceux dont personne ne peut être exclu, et que l'usage de l'un n'empêche pas l'usage d'un autre :
 
-Les routes.
+* l'éclairage public ;
+* la sécurité ;
+* la défense du territoire.
 
-Les ponts.
-
-L'éclairage public.
-
-La sécurité.
-
-La justice.
-
-Ou encore certaines écoles et certains hôpitaux.
+D'autres services, comme les routes, les ponts, les écoles ou les hôpitaux, ne sont pas des biens publics au sens strict. Mais de nombreuses sociétés choisissent de les financer ensemble, parce qu'elles les jugent essentiels pour tous.
 
 Même si nous ne les utilisons pas tous de la même manière, ils rendent la vie en société possible.
 
 ---
+
+## Le pont du village
 
 Mais une autre question se pose immédiatement.
 
@@ -176,6 +176,8 @@ Si chacun attend que son voisin paie à sa place...
 
 Le pont ne sera jamais construit.
 
+Les économistes appellent ce phénomène le **problème du passager clandestin** : profiter d'un bien commun sans contribuer, en comptant sur les autres.
+
 Les habitants doivent donc trouver une autre solution.
 
 Ils décident que chacun apportera une petite contribution.
@@ -190,9 +192,16 @@ Plutôt que de demander à chacun de financer seul des infrastructures immenses,
 
 Cette mise en commun permet ensuite de financer des services qui bénéficient à l'ensemble de la population.
 
+Elle prend des formes variées selon les pays :
+
+* des impôts sur les revenus, comme les salaires ;
+* des taxes sur les achats, comme la TVA ;
+* des impôts sur les bénéfices des entreprises ;
+* des taxes sur certains biens, comme les propriétés immobilières.
+
 Ce principe est d'ailleurs utilisé depuis des milliers d'années.
 
-Déjà dans les grandes civilisations de l'Égypte ancienne, de la Grèce ou de l'Empire romain, différentes formes d'impôts existaient pour financer les routes, les ouvrages publics, l'administration ou encore la défense.
+Déjà dans les grandes civilisations de l'Égypte ancienne, de la Grèce ou de l'Empire romain, différentes formes de prélèvements existaient pour financer les routes, les ouvrages publics, l'administration ou encore la défense. Ils prenaient souvent des formes très différentes d'aujourd'hui : récoltes, travail obligatoire, tributs.
 
 Aujourd'hui, les États modernes continuent d'utiliser ce même principe, avec des règles qui varient d'un pays à l'autre.
 
@@ -203,6 +212,8 @@ Ils sont nés d'un constat simple.
 Certaines réalisations sont tout simplement trop grandes pour être financées par une seule personne.
 
 ---
+
+## Où va l'argent des impôts ?
 
 Une fois les impôts collectés, une nouvelle question se pose.
 
@@ -225,6 +236,8 @@ Bien sûr, la manière dont cet argent est réparti varie d'un pays à l'autre.
 Chaque État établit son propre budget en fonction de ses priorités, de ses besoins et de ses ressources.
 
 ---
+
+## La confiance, au cœur du système
 
 Mais une autre question apparaît rapidement.
 
@@ -272,7 +285,9 @@ Et que nous apprennent-ils, au fond, sur la manière dont les êtres humains viv
 
 ---
 
-En théorie, certains pourraient penser que oui.
+## Une société sans impôts est-elle possible ?
+
+En théorie, certains pensent que oui. Certains courants défendent l'idée d'un État très réduit, où l'essentiel des services serait financé volontairement ou par des acteurs privés.
 
 Mais dans la pratique, cela soulève une question difficile.
 
@@ -300,6 +315,8 @@ D'autres moins.
 
 Chaque société cherche un équilibre entre les ressources qu'elle collecte et les services qu'elle souhaite offrir à sa population.
 
+Ce choix fait l'objet d'un vrai débat. Certains estiment que l'État devrait prélever moins et en faire moins, pour laisser davantage de liberté et de ressources aux individus et aux entreprises. D'autres défendent des services publics plus étendus, financés par des impôts plus élevés, notamment pour réduire les inégalités. Ce désaccord porte rarement sur l'existence même des impôts : il porte sur leur niveau, leur répartition et l'usage qui en est fait.
+
 Comme toute organisation humaine, un système fiscal peut aussi être mal géré.
 
 C'est pourquoi la transparence, la bonne gestion des finances publiques et le contrôle des dépenses sont essentiels.
@@ -310,29 +327,31 @@ Ils attendent également que cette contribution soit utilisée avec responsabili
 
 ---
 
-Imaginez maintenant un orchestre.
+## La pirogue et ses rameurs
 
-Chaque musicien joue d'un instrument différent.
+Imaginez maintenant une grande pirogue.
 
-Certains jouent du violon.
+Une dizaine de rameurs sont assis côte à côte.
 
-D'autres de la trompette.
+Chacun tient sa pagaie.
 
-Du piano.
+Pris séparément, un rameur ne ferait que tourner en rond.
 
-Ou des percussions.
-
-Pris séparément, chacun produit un son.
-
-Mais c'est seulement lorsque tous jouent ensemble, en suivant la même partition, qu'une véritable musique peut naître.
+Mais lorsque tous rament en rythme, dans la même direction, elle avance.
 
 Une société fonctionne souvent de manière comparable.
 
 Chaque citoyen apporte sa contribution, selon ses moyens et les règles de son pays.
 
-Aucune contribution, prise isolément, ne suffit à faire fonctionner une nation.
+Aucune contribution, prise isolément, ne suffit à faire avancer une nation.
 
 Mais réunies, elles permettent de construire des écoles, des hôpitaux, des routes, de financer la justice, la sécurité et de nombreux autres services qui rendent la vie en société possible.
+
+Et comme sur la pirogue, il faut aussi quelqu'un qui tienne le cap : ceux qui gèrent ces ressources ont la responsabilité de les orienter vers l'intérêt de tous.
+
+---
+
+## Plus qu'une question d'argent
 
 Les impôts ne sont donc pas seulement une question d'argent.
 
@@ -346,6 +365,8 @@ C'est comprendre comment les êtres humains ont appris, au fil des siècles, à 
 
 ---
 
+## Une œuvre commune
+
 La prochaine fois que vous emprunterez une route, que vous passerez devant une école, un hôpital ou une caserne de pompiers, vous les regarderez peut-être différemment.
 
 Car derrière chacune de ces réalisations se cache bien plus que du béton, de l'acier ou des bâtiments.
@@ -353,6 +374,8 @@ Car derrière chacune de ces réalisations se cache bien plus que du béton, de 
 Elles racontent une histoire.
 
 Celle de millions de personnes qui, sans toujours se connaître, ont accepté de contribuer à une œuvre commune.
+
+Adam, lui, ne regarda plus sa fiche de paie tout à fait comme avant. Derrière la ligne des prélèvements, il voyait désormais l'école, l'hôpital et la route de sa ville.
 
 ---
 

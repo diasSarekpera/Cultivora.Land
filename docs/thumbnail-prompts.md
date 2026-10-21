@@ -75,7 +75,7 @@ celle à mettre en vert émeraude, le reste en blanc).
 | `pourquoi-une-bonne-idee-ne-suffit-pas`           | POURQUOI **UNE BONNE IDÉE** NE SUFFIT PAS ?                 |
 | `qui-a-reellement-ecrit-la-bible`                 | QUI A RÉELLEMENT ÉCRIT LA **BIBLE** ?                       |
 | `pourquoi-avons-nous-besoin-de-croire`            | POURQUOI AVONS-NOUS BESOIN DE **CROIRE** ?                  |
-| `pourquoi-vieillissons-nous`                      | POURQUOI **VIEILLISSONS**-NOUS ?                            |
+| `pourquoi-vieillissons-nous`                      | POURQUOI **VIEILLISSONS-NOUS ?**                            |
 
 Note sur le dernier : le titre complet de l'article ("...pour créer
 une entreprise ?") est trop long pour tenir sur une miniature, je l'ai

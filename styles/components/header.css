@@ -3,12 +3,28 @@
 ============================================================ */
 
 .header {
-  position: absolute;
+  position: fixed;          /* reste en haut de l'écran pendant le défilement */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 50;
   padding: var(--space-6) var(--section-x);
+  border-bottom: 1px solid transparent;
+  transition: background var(--duration-base) var(--ease-in-out),
+              padding var(--duration-base) var(--ease-in-out),
+              border-color var(--duration-base) var(--ease-in-out),
+              box-shadow var(--duration-base) var(--ease-in-out);
+}
+
+/* Dès qu'on défile : fond vert profond semi-opaque, flou, barre plus fine */
+.header.is-scrolled {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  background: rgba(12, 36, 23, 0.9);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--border-on-green-soft);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
 }
 
 .header__inner {
@@ -40,11 +56,17 @@
 }
 
 .header__wordmark-title {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 600;
+  font-family: var(--font-brand);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--text-on-green-strong);
+  white-space: nowrap;
 }
+
+/* « Land » ressort en vert vif, comme sur le logo et les miniatures */
+.wordmark-land { color: var(--green-bright); }
 
 .header__wordmark-tagline {
   font-family: var(--font-body);
@@ -161,6 +183,8 @@
 ------------------------------------------------------------ */
 @media (max-width: 420px) {
   .header { padding: var(--space-4) var(--section-x); }
+  .header.is-scrolled { padding-top: var(--space-2); padding-bottom: var(--space-2); }
+  .header__wordmark-title { font-size: 0.875rem; letter-spacing: 0.1em; }
   .header__search { display: none; }
   .header__wordmark-tagline { display: none; }
 }
@@ -221,8 +245,11 @@
 }
 
 .mobile-nav__brand {
-  font-family: var(--font-display);
-  font-size: var(--text-md);
+  font-family: var(--font-brand);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--text-on-green-strong);
 }
 

@@ -32,6 +32,7 @@
   /* ── Typographie ── */
   --font-display: 'Fraunces', 'Georgia', serif;      /* titres, wordmark */
   --font-body:    'Work Sans', 'Helvetica', sans-serif; /* nav, texte courant */
+  --font-brand:   'Josefin Sans', 'Futura', 'Century Gothic', sans-serif; /* wordmark "Cultivora Land" uniquement */
 
   --text-xs:   0.8125rem;
   --text-sm:   0.9375rem;
