@@ -9,7 +9,7 @@ soi-même**, **Créer de la valeur**.
 
 ```
 index.html                          Page d'accueil (hero, 3 portes, derniers articles)
-pages/blog/<slug>/index.html        Page de lecture d'un article (8/8 construits)
+pages/blog/<slug>/index.html        Page de lecture d'un article (5 publiés)
                                      (la page listing pages/blog/ a été retirée, remplacée par pages/contenus/)
 pages/contenus/index.html           Liste filtrable par porte (?porte=<id>)
 pages/about/index.html              À propos / mission (contenu tiré de pitch.md)
@@ -19,10 +19,25 @@ styles/                             Variables, reset, styles globaux, composants
 assets/images/logo.png              Logo officiel
 assets/images/og-default.jpg        Image de partage par défaut (1200×630)
 assets/images/articles/<slug>.jpg   Vignette + image de partage propre à chaque article
-JSON/content.json                   Les 8 articles classés par porte (source de vérité)
-content-source/bibliotheque/        Les 8 articles sources en Markdown
+JSON/content.json                   Tous les articles classés par porte (source de vérité, champ `published`)
+content-source/bibliotheque/        Les articles sources en Markdown (11 fichiers)
 content-source/pitch.md             Le pitch/mission du projet
 ```
+
+## Publication (mise à jour)
+
+- **Dépubliés** (pages HTML retirées du site, textes `.md`, miniatures et
+  entrées JSON conservés, `published: false`) : les 6 autres articles (« Sommes-nous vraiment nos pensées ? » et « Pourquoi bâillons-nous ? » ont été republiés).
+  Les anciennes pages restent récupérables dans l'historique git.
+- **Publié** : `qui-a-reellement-ecrit-la-bible` (porte « Comprendre le monde ») et
+  `sommes-nous-vraiment-nos-pensees`, `pourquoi-baillons-nous` et
+  `pourquoi-avons-nous-besoin-de-croire` et `pourquoi-vieillissons-nous` (porte « Se comprendre soi-même »).
+  La miniature de `pourquoi-vieillissons-nous` est un **placeholder** : remplacer
+  `assets/images/articles/pourquoi-vieillissons-nous.jpg` et `.webp` (1200×674).
+  Les miniatures de ces deux articles (Bible, croire) sont en place (1200×674).
+  La miniature de la Bible est en place (`assets/images/articles/qui-a-reellement-ecrit-la-bible.jpg` et `.webp`, 1200×674).
+- La section « Sur le même thème » est absente de la page tant qu'aucun
+  autre article n'est publié.
 
 ## Fait (mise à jour)
 

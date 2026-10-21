@@ -57,7 +57,7 @@ TITRE À AFFICHER SUR LA MINIATURE :
 
 ---
 
-## Les 8 titres à utiliser (un prompt par article)
+## Les titres (8 + 3) à utiliser (un prompt par article)
 
 Pour chaque article, reprends le prompt de base et remplace la
 dernière ligne par le découpage indiqué (la partie **en gras** est
@@ -73,6 +73,9 @@ celle à mettre en vert émeraude, le reste en blanc).
 | `sommes-nous-vraiment-nos-pensees`                | SOMMES-NOUS VRAIMENT **NOS PENSÉES ?**                      |
 | `pourquoi-largent-perd-il-de-sa-valeur`           | POURQUOI **L'ARGENT** PERD-IL DE SA VALEUR ?                |
 | `pourquoi-une-bonne-idee-ne-suffit-pas`           | POURQUOI **UNE BONNE IDÉE** NE SUFFIT PAS ?                 |
+| `qui-a-reellement-ecrit-la-bible`                 | QUI A RÉELLEMENT ÉCRIT LA **BIBLE** ?                       |
+| `pourquoi-avons-nous-besoin-de-croire`            | POURQUOI AVONS-NOUS BESOIN DE **CROIRE** ?                  |
+| `pourquoi-vieillissons-nous`                      | POURQUOI **VIEILLISSONS**-NOUS ?                            |
 
 Note sur le dernier : le titre complet de l'article ("...pour créer
 une entreprise ?") est trop long pour tenir sur une miniature, je l'ai

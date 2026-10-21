@@ -16,6 +16,8 @@ Le bâillement est-il seulement un signe de fatigue, ou cache-t-il quelque chose
 
 ---
 
+## Une épidémie de bâillements
+
 Dans une salle de classe, un groupe d'élèves suivait un cours en fin d'après-midi.
 
 Après plusieurs heures de travail, l'ambiance était devenue plus calme.
@@ -40,13 +42,17 @@ Lucas sentit immédiatement sa curiosité grandir.
 
 ---
 
+## Une vieille explication qui ne tient plus
+
 Le bâillement est un réflexe naturel observé chez les êtres humains, mais aussi chez de nombreux animaux.
 
 Pendant longtemps, les scientifiques ont pensé que nous bâillions simplement parce que notre corps manquait d'oxygène.
 
 Aujourd'hui, cette explication est considérée comme insuffisante.
 
-Selon les recherches actuelles, le bâillement semble avoir plusieurs fonctions.
+Selon les recherches actuelles, le bâillement semble avoir plusieurs fonctions, même si les scientifiques ne sont pas encore tous d'accord sur ce qui compte le plus.
+
+## Un thermostat pour le cerveau
 
 L'une des hypothèses les plus sérieuses est qu'il aide à réguler la température du cerveau.
 
@@ -62,17 +68,23 @@ Il pourrait aider le cerveau à ajuster son niveau de vigilance.
 
 ---
 
+## Pourquoi le bâillement est-il contagieux ?
+
 Mais l'aspect le plus fascinant reste sans doute le bâillement contagieux.
 
-De nombreuses études suggèrent qu'il serait lié à notre capacité d'empathie et à certains mécanismes sociaux du cerveau.
+De nombreuses études suggèrent qu'il serait lié à notre capacité d'empathie et à certains mécanismes sociaux du cerveau, même si ce lien fait encore débat.
 
-Lorsque nous voyons quelqu'un bâiller, certaines régions cérébrales associées à l'observation et à l'imitation s'activent automatiquement.
+Lorsque nous voyons quelqu'un bâiller, certaines régions cérébrales associées à l'observation et à l'imitation pourraient s'activer automatiquement.
 
 C'est pourquoi il devient parfois difficile de résister à l'envie de bâiller à son tour.
+
+Il n'est d'ailleurs pas nécessaire de voir quelqu'un : l'entendre, ou même y penser, suffit parfois. Chez les jeunes enfants, cette contagion n'apparaît généralement que plus tard dans l'enfance.
 
 D'ailleurs, il est possible que vous ayez déjà bâillé en lisant ce texte.
 
 ---
+
+## Ce que cache un geste banal
 
 Le bâillement semble être un geste banal du quotidien.
 
@@ -81,6 +93,8 @@ Pourtant, derrière ce simple mouvement se cachent encore de nombreuses question
 Il pourrait participer à la régulation du cerveau, accompagner les changements de vigilance et même jouer un rôle dans nos interactions sociales.
 
 Comme beaucoup de phénomènes naturels, il nous rappelle qu'un comportement ordinaire peut dissimuler un mécanisme bien plus complexe qu'il n'y paraît.
+
+Bâiller n'est donc pas forcément un signe d'ennui ou d'impolitesse.
 
 La prochaine fois que quelqu'un bâillera près de vous, vous le regarderez peut-être d'un œil différent.
 
