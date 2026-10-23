@@ -103,3 +103,16 @@ et `assets/js/subscribe.js`.
 
 Tant que ce point d'entrée n'existe pas, un visiteur qui s'abonne voit le message
 « momentanément indisponible » : aucune fausse confirmation n'est affichée.
+
+## Partage des articles (Open Graph)
+
+Chaque page d'article déclare sa propre miniature comme image de partage
+(`og:image` et `twitter:image` → `/assets/images/articles/<slug>.jpg`, URL
+absolue en `https://cultivora-land.onrender.com`). Si le domaine change, il
+faut remplacer cette adresse dans les balises `og:url`, `og:image`,
+`twitter:image` et `canonical` des pages.
+
+Les réseaux sociaux gardent l'aperçu en cache : après un redéploiement ou un
+changement de miniature, forcer une nouvelle lecture (Facebook : Sharing
+Debugger → « Scrape Again » ; LinkedIn : Post Inspector ; WhatsApp : partager
+le lien avec un paramètre en plus, ex. `?v=2`).
