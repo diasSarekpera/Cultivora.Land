@@ -20,7 +20,9 @@ Et que se passe-t-il réellement dans notre corps lorsque nous fermons les yeux 
 
 ---
 
-Dans un petit quartier vivait Adam, un étudiant ambitieux qui préparait un examen important.
+## L'étudiant qui voulait dormir moins
+
+Dans un petit quartier vivait Josué, un étudiant ambitieux qui préparait un examen important.
 
 Convaincu qu'il devait travailler plus que les autres pour réussir, il décida de réduire progressivement son temps de sommeil.
 
@@ -44,9 +46,11 @@ Intrigué, il en parla à l'un de ses professeurs. Celui-ci lui répondit simple
 
 > « Tu crois gagner du temps en dormant moins. Pourtant, ton cerveau considère peut-être le sommeil comme l'une de ses tâches les plus importantes. »
 
-Cette phrase resta longtemps dans l'esprit d'Adam.
+Cette phrase resta longtemps dans l'esprit d'Josué.
 
 ---
+
+## Un immense travail invisible
 
 Pendant longtemps, les scientifiques se sont demandé pourquoi le sommeil était aussi indispensable.
 
@@ -68,11 +72,13 @@ Le sommeil participe également à la récupération physique.
 
 Pendant la nuit, le corps répare certains tissus, produit différentes hormones et renforce de nombreux mécanismes nécessaires à son bon fonctionnement.
 
-Mais il existe aussi un autre phénomène fascinant.
+## Le grand nettoyage de la nuit
 
-Le cerveau possède un système de nettoyage qui devient particulièrement actif durant le sommeil.
+Il existe aussi un autre phénomène fascinant.
 
-Certaines substances accumulées pendant l'éveil sont alors éliminées plus efficacement.
+Selon des recherches menées en grande partie chez l'animal, le cerveau possède un système de nettoyage qui deviendrait particulièrement actif durant le sommeil.
+
+Certaines substances accumulées pendant l'éveil seraient alors éliminées plus efficacement.
 
 On pourrait presque comparer cela à une grande ville où les agents de nettoyage profitent de la nuit pour nettoyer les rues avant le retour des habitants le lendemain matin.
 
@@ -87,7 +93,19 @@ Le sommeil influence également :
 
 Lorsque nous manquons régulièrement de sommeil, toutes ces fonctions peuvent progressivement être perturbées.
 
+## Combien d'heures faut-il dormir ?
+
+Les besoins varient selon l'âge et selon les personnes.
+
+Les autorités de santé recommandent généralement aux adultes de dormir au moins sept heures par nuit, et sept à neuf heures pour la plupart d'entre eux.
+
+Les adolescents ont besoin d'environ huit à dix heures, et les enfants plus encore.
+
+Si vous dormez mal depuis longtemps malgré de bonnes habitudes, il est utile d'en parler à un professionnel de santé.
+
 ---
+
+## Le cerveau, une bibliothèque à ranger
 
 Imaginez une immense bibliothèque.
 
@@ -107,6 +125,8 @@ Le sommeil est donc moins une pause qu'une période d'entretien indispensable.
 
 ---
 
+## Dormir n'est pas du temps perdu
+
 Nous avons parfois l'impression que dormir nous fait perdre du temps.
 
 Pourtant, la réalité semble être exactement l'inverse.
@@ -120,6 +140,8 @@ Dormir n'est donc pas une faiblesse.
 Ce n'est pas du temps perdu.
 
 C'est l'une des conditions qui rendent possible tout ce que nous faisons lorsque nous sommes éveillés.
+
+Josué, lui, finit par retrouver des nuits complètes. Il constata qu'il retenait mieux ses cours en travaillant moins longtemps, mais mieux reposé.
 
 ---
 

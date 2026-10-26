@@ -9,7 +9,7 @@ soi-même**, **Créer de la valeur**.
 
 ```
 index.html                          Page d'accueil (hero, 3 portes, derniers articles)
-pages/blog/<slug>/index.html        Page de lecture d'un article (6 publiés)
+pages/blog/<slug>/index.html        Page de lecture d'un article (7 publiés)
                                      (la page listing pages/blog/ a été retirée, remplacée par pages/contenus/)
 pages/contenus/index.html           Liste filtrable par porte (?porte=<id>)
 pages/about/index.html              À propos / mission (contenu tiré de pitch.md)
@@ -27,12 +27,13 @@ content-source/pitch.md             Le pitch/mission du projet
 ## Publication (mise à jour)
 
 - **Dépubliés** (pages HTML retirées du site, textes `.md`, miniatures et
-  entrées JSON conservés, `published: false`) : les 5 autres articles (« Sommes-nous vraiment nos pensées ? » et « Pourquoi bâillons-nous ? » ont été republiés).
+  entrées JSON conservés, `published: false`) : les 4 autres articles (« Sommes-nous vraiment nos pensées ? » et « Pourquoi bâillons-nous ? » ont été republiés, ainsi que « Pourquoi dormons-nous ? »).
   Les anciennes pages restent récupérables dans l'historique git.
 - **Publié** : `qui-a-reellement-ecrit-la-bible` (porte « Comprendre le monde ») et
   `sommes-nous-vraiment-nos-pensees`, `pourquoi-baillons-nous` et
   `pourquoi-avons-nous-besoin-de-croire` et `pourquoi-vieillissons-nous` (porte « Se comprendre soi-même »), ainsi que
-  `pourquoi-payons-nous-des-impots` (porte « Comprendre le monde »).
+  `pourquoi-payons-nous-des-impots` (porte « Comprendre le monde ») et
+  `pourquoi-dormons-nous` (porte « Se comprendre soi-même »).
   Les miniatures des articles publiés sont toutes en place (1200×674).
   Les miniatures de ces deux articles (Bible, croire) sont en place (1200×674).
   La miniature de la Bible est en place (`assets/images/articles/qui-a-reellement-ecrit-la-bible.jpg` et `.webp`, 1200×674).
